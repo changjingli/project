@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>直播 - EduSoho网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By EduSoho</title>
+		<meta name="keywords" content="EduSoho网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="Edusoho是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。Edusoho提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，EduSoho也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。EduSoho产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，EduSoho具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。Edusoho开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libs/swiper/3.4.0/css/swiper.min.css"/>
+
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.min.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+  <![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="es-wrap">
+
+			<header class="es-header navbar">
+				<div class="navbar-header">
+					<div class="visible-xs  navbar-mobile">
+						<a href="javascript:;" class="navbar-more js-navbar-more">
+							<i class="es-icon es-icon-menu"></i>
+						</a>
+						<div class="html-mask"></div>
+						<div class="nav-mobile">
+							<form class="navbar-form" action="/search" method="get">
+								<div class="form-group">
+									<input class="form-control" placeholder="搜索" name="q">
+									<button class="button es-icon es-icon-search"></button>
+								</div>
+							</form>
+							<ul class="nav navbar-nav">
+
+								<li class="">
+									<a href="http://demo.edusoho.com">首页 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="/course/explore">课程和班级 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="http://demo.edusoho.com/open/course/explore">公开课</a>
+										</li>
+										<li>
+											<a href="http://demo.edusoho.com/course/explore/fuction">课程功能</a>
+										</li>
+										<li>
+											<a href="http://demo.edusoho.com/course/explore/administrator">系统管理</a>
+										</li>
+										<li>
+											<a href="http://demo.edusoho.com/course/explore/app">官方应用</a>
+										</li>
+										<li>
+											<a href="http://demo.edusoho.com/classroom/explore" target="_blank">班级中心</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="">
+									<a href="/live">直播学堂 </a>
+								</li>
+
+								<li class="">
+									<a href="http://tiku.edusoho.com/login/oauth2/es" target="_blank">题库 </a>
+								</li>
+
+								<li class="">
+									<a href="/mobile">APP </a>
+								</li>
+
+								<li class="">
+									<a href="/vip">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="http://demo.edusoho.com/article">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="http://www.edusoho.com" target="_blank">EduSoho官网</a>
+										</li>
+										<li>
+											<a href="http://open.edusoho.com/" target="_blank">开放云平台</a>
+										</li>
+										<li>
+											<a href="http://www.qiqiuyu.com/page/qiqiuyu" target="_blank">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="/" class="navbar-brand">
+						<img src="files/system/2016/08-26/154339b63acd679602.png">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse">
+					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+						<li class="">
+							<a href="http://demo.edusoho.com">首页 </a>
+						</li>
+
+						<li class="nav-hover">
+							<a href="/course/explore">课程和班级 <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="http://demo.edusoho.com/open/course/explore">公开课</a>
+								</li>
+								<li>
+									<a href="http://demo.edusoho.com/course/explore/fuction">课程功能</a>
+								</li>
+								<li>
+									<a href="http://demo.edusoho.com/course/explore/administrator">系统管理</a>
+								</li>
+								<li>
+									<a href="http://demo.edusoho.com/course/explore/app">官方应用</a>
+								</li>
+								<li>
+									<a href="http://demo.edusoho.com/classroom/explore" target="_blank">班级中心</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="">
+							<a href="/live">直播学堂 </a>
+						</li>
+
+						<li class="">
+							<a href="http://tiku.edusoho.com/login/oauth2/es" target="_blank">题库 </a>
+						</li>
+
+						<li class="">
+							<a href="/mobile">APP </a>
+						</li>
+						<li class="nav-more nav-hover">
+							<a class="more">
+								<i class="es-icon es-icon-morehoriz"></i>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+
+								<li class="">
+									<a href="/vip">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="http://demo.edusoho.com/article">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="http://www.edusoho.com" target="_blank">EduSoho官网</a>
+										</li>
+										<li>
+											<a href="http://open.edusoho.com/" target="_blank">开放云平台</a>
+										</li>
+										<li>
+											<a href="http://www.qiqiuyu.com/page/qiqiuyu" target="_blank">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+					<div class="navbar-user  left ">
+						<ul class="nav user-nav">
+							<li class="user-avatar-li nav-hover visible-xs">
+								<a href="javascript:;" class="dropdown-toggle">
+									<img class="avatar-xs" src="assets/img/default/avatar.png">
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="/login?goto=%2Flive">登录</a>
+									</li>
+									<li>
+										<a href="/register?goto=%2Flive">注册</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hidden-xs">
+								<a href="/login?goto=%2Flive">登录</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="/register?goto=%2Flive">注册</a>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+							<div class="form-group">
+								<input class="form-control js-search" name="q" placeholder="搜索">
+								<button class="button es-icon es-icon-search"></button>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</header>
+			<section class="es-live-poster swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-hidden" style="background: #1d75ed;">
+						<div class="container">
+							<a href="" target="_blank"><img class="img-responsive" src="assets/img/placeholder/live-slide-1.jpg?6.15.7">
+							</a>
+						</div>
+					</div>
+
+					<div class="swiper-slide swiper-hidden" style="background: #1d75ed;">
+						<div class="container">
+							<a href="" target="_blank"><img class="img-responsive" src="assets/img/placeholder/live-slide-1.jpg?6.15.7">
+							</a>
+						</div>
+					</div>
+
+					<div class="swiper-slide swiper-hidden" style="background: #1d75ed;">
+						<div class="container">
+							<a href="" target="_blank"><img class="img-responsive" src="assets/img/placeholder/live-slide-1.jpg?6.15.7">
+							</a>
+						</div>
+					</div>
+
+					<div class="swiper-slide swiper-hidden" style="background: #1d75ed;">
+						<div class="container">
+							<a href="" target="_blank"><img class="img-responsive" src="assets/img/placeholder/live-slide-1.jpg?6.15.7">
+							</a>
+						</div>
+					</div>
+
+					<div class="swiper-slide swiper-hidden" style="background: #1d75ed;">
+						<div class="container">
+							<a href="" target="_blank"><img class="img-responsive" src="assets/img/placeholder/live-slide-1.jpg?6.15.7">
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-pager"></div>
+			</section>
+			<div id="content-container" class="container">
+				<div class="live-course-body row">
+					<div class="col-md-4">
+						<div class="panel panel-default es-live-list">
+							<div class="panel-body">
+								<ul class="clearfix">
+									<li class="active">
+										<a href="#today" data-toggle="tab">今日直播</a>
+									</li>
+									<li>
+										<a href="#11-04" data-toggle="tab">11-04</a>
+									</li>
+									<li>
+										<a href="#11-05" data-toggle="tab">11-05</a>
+									</li>
+									<li>
+										<a href="#11-06" data-toggle="tab">11-06</a>
+									</li>
+
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="today">
+										<div class="empty">今日暂无直播</div>
+
+									</div>
+									<div class="tab-pane " id="11-04">
+										<div class="es-live-item">
+
+											<div class="live-content live">
+												<div class="timeline">
+													<span class="time-icon"><em></em></span>
+												</div>
+												<ul class="live-courses">
+													<li>
+														<a href="/course/283/learn#lesson/2833" target="_blank"><span>12:00</span>直播教室体验</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<div class="tab-pane " id="11-05">
+										<div class="es-live-item">
+
+											<div class="live-content live">
+												<div class="timeline">
+													<span class="time-icon"><em></em></span>
+												</div>
+												<ul class="live-courses">
+													<li>
+														<a href="/course/283/learn#lesson/2834" target="_blank"><span>12:00</span>直播教室体验</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<div class="tab-pane " id="11-06">
+										<div class="es-live-item">
+
+											<div class="live-content live">
+												<div class="timeline">
+													<span class="time-icon"><em></em></span>
+												</div>
+												<ul class="live-courses">
+													<li>
+														<a href="/course/283/learn#lesson/2835" target="_blank"><span>12:00</span>直播教室体验</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default es-live-recommend">
+							<div class="panel-heading">
+								<a href="/course/explore?filter%5Btype%5D=live&amp;filter%5Bprice%5D=&amp;filter%5BcurrentLevelId%5D=all&amp;orderBy=recommendedSeq " class="more">
+									<i class="es-icon es-icon-morehoriz"></i>
+								</a>
+								<h3 class="panel-title">推荐课程</h3>
+							</div>
+
+							<div class="panel-body">
+								<div class="media">
+									<div class="media-left">
+										<a href="/course/283" title="EduSoho直播教室演示" target="_blank">
+											<img src="files/default/2016/05-23/1621040d8157208365.jpg" class="img-responsive">
+										</a>
+
+									</div>
+									<div class="media-body">
+										<div class="title">
+											<a href="/course/283" class="gray-darker" title="EduSoho直播教室演示" target="_blank">EduSoho直播教室演示...</a>
+										</div>
+										<div class="metas">
+
+											<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>
+											</span>
+
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="panel panel-default es-live-back">
+							<div class="panel-heading">
+								<h3 class="panel-title">直播回放</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2832" target="_blank"><i class="dat"></i><span class="color-gray">11-03 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2831" target="_blank"><i class="dat"></i><span class="color-gray">11-02 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2830" target="_blank"><i class="dat"></i><span class="color-gray">11-01 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2829" target="_blank"><i class="dat"></i><span class="color-gray">10-31 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2828" target="_blank"><i class="dat"></i><span class="color-gray">10-30 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2827" target="_blank"><i class="dat"></i><span class="color-gray">10-29 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2826" target="_blank"><i class="dat"></i><span class="color-gray">10-28 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2825" target="_blank"><i class="dat"></i><span class="color-gray">10-27 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2824" target="_blank"><i class="dat"></i><span class="color-gray">10-26 12:00</span>直播教室体验</a>
+									</li>
+									<li class="text-sm">
+										<a href="/course/283/learn#lesson/2823" target="_blank"><i class="dat"></i><span class="color-gray">10-25 12:00</span>直播教室体验</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<aside class="col-md-8">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<form id="live-search-form" class="form-inline" action="/live" method="get" novalidate="">
+									<div class="form-group mrl">
+										<select style="width:150px;" class="form-control" name="categoryId" id="categoryId">
+											<option value="0">课程分类</option>
+											<option value="74">功能体验</option>
+											<option value="35">课程功能</option>
+											<option value="66">官方应用</option>
+											<option value="69">　教学增强</option>
+											<option value="68">　网校管理</option>
+											<option value="67">　营销推广</option>
+											<option value="70">　主题</option>
+											<option value="56">系统管理</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select style="width:150px;" class="form-control" name="vipCategoryId" id="vipCategoryId">
+											<option value="">会员课程</option>
+											<option value="5">白银会员</option>
+											<option value="6">黄金会员</option>
+											<option value="8">钻石会员</option>
+										</select>
+									</div>
+								</form>
+							</div>
+
+							<div class="panel-body  es-live-all">
+								<div class="media">
+									<div class="media-left">
+										<a href="/course/283" title="EduSoho直播教室演示" target="_blank">
+											<img src="files/default/2016/05-23/1621040d7b85184881.jpg" alt="EduSoho直播教室演示" class="img-responsive" />
+											<span class="re-live"></span>
+											<span class="re-report">直播预告 11-04 12:00</span>
+										</a>
+									</div>
+									<div class="media-body">
+										<div class="title mbm">
+											<a href="course/283" class="gray-darker" title="EduSoho直播教室演示" target="_blank">EduSoho直播教室演示</a>
+										</div>
+
+										<div class="metas">
+											<span class="num prl"><i class="es-icon es-icon-people prm"></i>3809</span>
+											<span class="comment"><i class="es-icon es-icon-textsms prm"></i>6</span>
+										</div>
+										<div class="user">
+											<a class="mrm js-user-card" href="/user/2487" data-card-url="/user/2487/card/show" data-user-id="2487">
+												<img class="avatar-xs" src="files/default/2015/08-31/091008008a96767512.jpg">
+
+											</a>
+
+											<a class="link-dark link-light" href="/user/2487">格洛咪</a>
+
+										</div>
+										<div class="other">
+
+											<span class="course-price-widget">
+
+  
+          <span class="price">
+                   <span class="text-success">免费</span>
+											</span>
+
+											</span>
+											<a href="/course/283" class="btn btn-primary" target="_blank">查看回放</a>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</aside>
+				</div>
+			</div>
+
+			<div class="es-footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+							<a class="" href="http://www.edusoho.com" target="_blank"><img src="assets/v2/img/bottom_logo.png" alt="建议图片大小为233*64"></a>
+							<div class="footer-sns">
+								<a href="http://weibo.com/edusoho" target="_blank"><i class="es-icon es-icon-weibo"></i></a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-weixin"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/weixin.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-apple"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/apple.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-android"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/android.png" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-8 footer-main clearfix">
+							<div class="link-item ">
+								<h3>我是学生</h3>
+								<ul>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/347/learn#lesson/673" target="_blank">如何注册</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/347/learn#lesson/705" target="_blank">如何学习</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/347/learn#lesson/811" target="_blank">如何互动</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是老师</h3>
+								<ul>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/22" target="_blank">发布课程</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/147" target="_blank">使用题库</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/372" target="_blank">教学资料库</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是管理员</h3>
+								<ul>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/340" target="_blank">系统设置</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/341" target="_blank">课程设置</a>
+									</li>
+									<li>
+										<a href="http://www.qiqiuyu.com/course/343" target="_blank">用户管理</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item hidden-xs">
+								<h3>关于我们</h3>
+								<ul>
+									<li>
+										<a href="http://www.edusoho.com/" target="_blank">ES官网</a>
+									</li>
+									<li>
+										<a href="http://weibo.com/qiqiuyu/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank">官方微博</a>
+									</li>
+									<li>
+										<a href="http://www.edusoho.com/abouts/joinus" target="_blank">加入我们</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<footer class="es-footer">
+				<div class="copyright">
+					<div class="container">
+						由<a href="http://www.chinaschooling.com.cn/" target="_blank">上学啦网络信息技术有限公司</a>提供技术支持
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- 侧边栏快捷操作 -->
+		<div class="es-bar hidden-xs">
+
+			<!-- 左侧列表 -->
+			<div class="es-bar-menu">
+				<ul class="bar-menu-top">
+					<li data-id="#bar-user-center" class="bar-user">
+						<a href="javascript:;" data-url="/esbar/my/study_center">学<br>习<br>中<br>心</a>
+					</li>
+					<li data-id="#bar-homework" data-toggle="tooltip" data-placement="left" title="我的考试/作业">
+						<a href="javascript:;" data-url="/esbar/my/practice/reviewing"><i class="es-icon es-icon-edit"></i></a>
+					</li>
+					<li data-id="#bar-course-list" data-placement="left" data-toggle="tooltip" title="我的课程/班级">
+						<a data-url="/esbar/my/course" href="javascript:;">
+							<i class="es-icon es-icon-book">
+    </i>
+						</a>
+					</li>
+					<li data-id="#bar-message" data-toggle="tooltip" data-placement="left" title="通知">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-notifications"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="bar-menu-sns">
+					<li class="popover-btn bar-qq-btn" data-container=".bar-qq-btn" data-title="QQ客服及QQ群" data-content-element="#bar-qq-content">
+						<a><i class="es-icon es-icon-qq"></i></a>
+					</li>
+					<li class="popover-btn bar-phone-btn" data-container=".bar-phone-btn" data-title="电话客服" data-content-element="#bar-phone-content">
+						<a><i class="es-icon es-icon-phone"></i></a>
+					</li>
+					<li class="popover-btn bar-weixin-btn" data-container=".bar-weixin-btn" data-content-element="#bar-weixin-content">
+						<a><i class="es-icon es-icon-weixin"></i></a>
+					</li>
+
+					<li data-toggle="tooltip" data-placement="left" title="手机端">
+						<a href="/mobile/" target="_blank"><i class="es-icon es-icon-phone1"></i></a>
+					</li>
+					<li class="go-top" style="margin:-10px auto 0 auto;" data-toggle="tooltip" data-placement="left" title="回到顶端">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-keyboardarrowup" style="margin-bottom:-8px"></i>
+							<span class="text-sm">TOP</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 列表内容 -->
+
+			<div class="bar-popover-content" style="display:none;">
+				<div id="bar-qq-content">
+
+					<div class="row mtm">
+						<div class="col-xs-6 mbm text-overflow">
+							<a class="link-light" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDAyMzg2MF8zNzEwMzFfODAwMDIzODYwXzJf" target="_blank"><img class="mrs" src="assets/v2/img/bar_qq.png" alt="" title="点击这里给我发消息" alt=""> ES客服
+							</a>
+						</div>
+					</div>
+					<hr>
+
+					<div class="row">
+						<div class="col-xs-6 mbm">
+							<p class="text-overflow">
+								<img class="mrs" src="assets/v2/img/bar_qq_group.png" alt=""> 官方群
+							</p>
+
+							<p class="text-overflow">
+								<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=53cde2ab2b230c0cf7cafb90c88f3344a152f1f18c76dff73c74d1e57e36ae8a"><img border="0" src="wpa/images/group.png" alt="EduSoho官方11群" title="EduSoho官方11群"></a>
+							</p>
+
+						</div>
+						<div class="col-xs-6 mbm">
+							<p class="text-overflow">
+								<img class="mrs" src="assets/v2/img/bar_qq_group.png" alt=""> 官方北京群
+							</p>
+
+							<p class="text-overflow">
+								<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=72494f78c7a55c23bc9e1c5082c57fda037404e4d2c7f8c2eae79221a3a6aeeb"><img border="0" src="wpa/images/group.png" alt="EduSoho官方－北京群" title="EduSoho官方－北京群"></a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div id="bar-phone-content">
+					<p class="mtm"><i class="es-icon es-icon-accesstime mrm"></i>工作时间：9:00 - 18:00</p>
+					<p class="mtm"><i class="es-icon es-icon-phone mrm"></i>杭州总部:0571-8681-9929</p>
+					<p class="mtm"><i class="es-icon es-icon-phone mrm"></i>北京分公司:010-53650185</p>
+					<p class="mtm"><i class="es-icon es-icon-mail mrm"></i>邮箱：
+						<a class="link-light" href="mailto:sales@edusoho.com">sales@edusoho.com</a>
+					</p>
+				</div>
+
+				<div id="bar-weixin-content">
+					<img width="110" class="img-responsive" src="files/system/webchat.jpg" alt="webchat">
+				</div>
+			</div>
+
+		</div>
+
+		<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+		<div id="modal" class="modal"></div>
+		<div id="attachment-modal" class="modal"></div>
+		
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/swiper/3.4.0/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+	</html>
