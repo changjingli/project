@@ -1911,7 +1911,7 @@ select:-webkit-autofill {
   border-top: none;
 }
 .es-header {
-  background: #212121;
+  background: #0095da;
   height: 60px;
   border: none;
   padding: 0 20px;
@@ -1962,11 +1962,10 @@ select:-webkit-autofill {
 .es-header .nav.navbar-nav > li > a {
   padding: 20px 30px;
   line-height: 20px;
-  color: #c1c1c1;
+  color: #fff;
   background: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (max-width: 1199px) {
@@ -2128,10 +2127,9 @@ select:-webkit-autofill {
 .nav.user-nav > li > a {
   display: block;
   padding: 20px 15px;
-  color: #c1c1c1;
+  color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (max-width: 1199px) {
@@ -2243,7 +2241,7 @@ select:-webkit-autofill {
   color: #fff;
 }
 .es-footer-link {
-  background: #2e2e2e;
+  background: #0095da;
   padding: 55px 0;
   border-bottom: 1px solid #111;
 }
@@ -2289,10 +2287,9 @@ select:-webkit-autofill {
   }
 }
 .footer-main a {
-  color: #c1c1c1;
+  color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer-main a:hover {
