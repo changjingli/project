@@ -1,16 +1,16 @@
 $(function() {
 	function init() {
 		// 轮播图
-		var mySwiper = new Swiper('.swiper-container', {
-			speed: 300,
-			loop: true,
-			mode: 'vertical',
-			autoplay: 5000,
-			calculateHeight: true,
-			pagination: '.swiper-pager',
-			paginationClickable: true,
-			autoplayDisableOnInteraction: false
-		});
+		/* 有些页面不需要swiper，所以没有加载swiper文件，使用try避免控制台报错 */
+		try {
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 5000, //可选选项，自动滑动
+				loop: true, //可选选项，开启循环
+				pagination: '.swiper-pager',
+				paginationClickable: true
+			});
+		} catch(e) {}
+
 	}
 
 	function pageEvents() {
