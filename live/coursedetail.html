@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>直播详情 - 电教馆网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By 电教馆</title>
+		<meta name="keywords" content="电教馆网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="电教馆是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。电教馆提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，电教馆也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。电教馆产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，电教馆具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。电教馆开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libs/swiper/2.7.6/idangerous.swiper.css" />
+
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+    <style type="text/css">
+			@font-face {
+				font-family: "es-icon";
+				src: url('assets/v2/fonts/es-icon.eot');
+				/* IE9*/
+				src: url('assets/v2/fonts/es-icon.eot?t=1459854189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('assets/v2/fonts/es-icon.woff?t=1459854189') format('woff'), /* chrome, firefox */
+				url('assets/v2/fonts/es-icon.ttf?t=1459854189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+				url('assets/v2/fonts/es-icon.svg?t=1459854189#es-icon') format('svg');
+				/* iOS 4.1- */
+			}
+		</style>
+  <![endif]-->
+		<style type="text/css">
+			/*.buy {
+				position: absolute;
+				bottom: 20px;
+				right: 30px;
+			}*/
+			.btn-primary {
+				background-color: rgb(51, 195, 136);
+			}
+		</style>
+	</head>
+
+	<body class="course-dashboard-page">
+
+		<div class="es-wrap">
+
+			<header class="es-header navbar">
+				<div class="navbar-header">
+					<div class="visible-xs  navbar-mobile">
+						<a href="javascript:;" class="navbar-more js-navbar-more">
+							<i class="es-icon es-icon-menu"></i>
+						</a>
+						<div class="html-mask"></div>
+						<div class="nav-mobile">
+							<form class="navbar-form" action="search" method="get">
+								<div class="form-group">
+									<input class="form-control" placeholder="搜索" name="q">
+									<button class="button es-icon es-icon-search"></button>
+								</div>
+							</form>
+							<ul class="nav navbar-nav">
+
+								<li class="">
+									<a href="live.html">首页 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="#">课程 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">公开课</a>
+										</li>
+										<li>
+											<a href="javascript:;">课程功能</a>
+										</li>
+										<li>
+											<a href="javascript:;">系统管理</a>
+										</li>
+										<li>
+											<a href="javascript:;">官方应用</a>
+										</li>
+										<li>
+											<a href="javascript:;">班级中心</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="">
+									<a href="courselist.html">直播学堂</a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="/" class="navbar-brand">
+						<img src="files/system/2016/08-26/154339b63acd679602.png">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse">
+					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+						<li class="">
+							<a href="live.html">首页 </a>
+						</li>
+
+						<li class="nav-hover">
+							<a href="#">课程 <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="javascript:;">公开课</a>
+								</li>
+								<li>
+									<a href="javascript:;">课程功能</a>
+								</li>
+								<li>
+									<a href="javascript:;">系统管理</a>
+								</li>
+								<li>
+									<a href="javascript:;">官方应用</a>
+								</li>
+								<li>
+									<a href="javascript:;">班级中心</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="">
+							<a href="courselist.html">直播学堂</a>
+						</li>
+
+						<li class="nav-more nav-hover">
+							<a class="more">其他
+								<!--<i class="es-icon es-icon-morehoriz"></i>-->
+							</a>
+							<ul class="dropdown-menu" role="menu">
+
+								<li class="">
+									<a href="#">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="javascript:;">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+					<div class="navbar-user  left ">
+						<!--<ul class="nav user-nav">
+							<li class="user-avatar-li nav-hover visible-xs">
+								<a href="javascript:;" class="dropdown-toggle">
+									<img class="avatar-xs" src="assets/img/default/avatar.png">
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="login.html">登录</a>
+									</li>
+									<li>
+										<a href="register.html">注册</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hidden-xs">
+								<a href="login.html">登录</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="register.html">注册</a>
+							</li>
+						</ul>-->
+						
+						<!--登陆后使用这个ul-->
+						
+						<ul class="nav user-nav">
+				                <li class="user-avatar-li nav-hover">
+				          <a href="javascript:;" class="dropdown-toggle">
+				            <img class="avatar-xs" src="files/default/2016/11-05/213307335114750678.jpg">
+				          </a>
+				          <ul class="dropdown-menu" role="menu">
+				            <li role="presentation" class="dropdown-header">伊见倾橙</li>
+				            <li><a href="javascript:;"><i class="es-icon es-icon-person"></i>个人主页</a></li>
+				            <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a></li>
+				            <li class="hidden-lg">
+				              <a href="/my">
+				                <i class="es-icon es-icon-eventnote"></i>我的学习              </a>
+				            </li>
+				            <li><a href="/my/coin"><i class="es-icon es-icon-accountwallet"></i>账户中心</a></li>
+				
+				            
+				            <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a></li>
+				            <li class="hidden-lg"><a href="/message/"><span class="pull-right num">1</span><i class="es-icon es-icon-mail"></i>私信</a></li>
+				            <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a></li>
+				          </ul>
+				        </li>
+				        <li class="visible-lg">
+				          <a href="my">我的学习</a>
+				        </li>
+				          </ul>
+				        </li>
+                      </ul>
+						<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+							<div class="form-group">
+								<input class="form-control js-search" name="q" placeholder="搜索">
+								<button class="button es-icon es-icon-search"></button>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</header>
+			
+			<section class="course-detail-header before">
+  <div class="container">
+
+    <div class="es-section clearfix">
+      
+    <div class="course-img">
+    
+    <img class="img-responsive" src="files/course/2016/10-31/1036066b465e703375.jpg" alt="运营管理">
+    <div class="tags">
+                </div>
+  </div>
+
+
+      <div class="course-info">
+    <h2 class="title">运营管理</h2>
+    <div class="subtitle total">课程总数：10</div>
+    <div class="subtitle exp">学习有效期：1218天</div>
+    <div class="subtitle count">学习次数：4.4万</div>
+    <div class="subtitle satisfy">学生满意度：98.11%</div>
+    <div class="metas">
+	    <p class="discount-price">
+			<span class="course-price-widget">
+				<span class="price">
+					<span class="text-success">免费</span>
+				</span>
+			</span>
+	    </p>
+    </div>
+    <div class="buy">
+      <a class="btn btn-primary btn-lg" href="#modal" data-toggle="modal" data-url="/course/427/buy?targetType=course">加入我的课程</a>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+			
+			<div id="content-container" class="container">
+        
+    <div class="course-detail row">
+    <div class="col-lg-9 col-md-8  course-detail-main">
+      <section class="es-section">
+        
+<div class="nav-btn-tab">
+  <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="/course/427">课程概览</a></li>
+      <li role="presentation"><a href="/course/427/lesson/list">课时列表</a></li>
+      <li role="presentation"><a href="/course/427/reviews/">评价 <small class="text-muted">( 2 )</small></a>
+      </li>
+      <li role="presentation"><a href="/course/427/notes"> 笔记 <small class="text-muted">( 5 )</small></a></li>
+    
+  <li class="highlight" style="left: 0px; width: 124px; overflow: hidden;"></li></ul>
+
+  </div>        
+  <div class="course-detail-content" data-widget-cid="widget-1">
+
+		      <div class="es-piece">
+        <div class="piece-header">
+          课程介绍
+        </div>
+        <div class="piece-body p-lg clearfix">
+                      <div class="text-muted">暂无课程简介</div>
+                  </div>
+      </div>    
+  </div>
+      </section>
+    </div>
+    <div class="col-lg-3 col-md-4  course-sidebar">
+  
+                  
+                  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <i class="es-icon es-icon-assignmentind"></i>
+      授课教师
+    </h3>
+  </div>
+  <div class="panel-body">
+                  <div class="media media-default">
+          <div class="media-left">
+              <a class=" js-user-card" href="#" data-card-url="/user/2487/card/show" data-user-id="2487">
+                  <img class="avatar-md" src="files/default/2015/08-31/0910080084cc142484.jpg">
+
+  </a>
+  
+          </div>
+          <div class="media-body">
+            <div class="title">
+                  <a class="link-dark link-light" href="javascript:;">格洛咪</a>
+  
+            </div>
+            <div class="content">EduSoho官方运营</div>
+          </div>
+        </div>
+            </div>
+</div>
+
+        
+                  
+<div class="panel panel-default">
+  <div class="panel-heading">
+        <h3 class="panel-title">
+      <i class="es-icon es-icon-personadd"></i>
+      最新学员
+    </h3>
+  </div>
+  <div class="panel-body">
+          <ul class="user-avatar-list clearfix">
+                          <li>
+              <a class="js-user-card" href="#" data-card-url="/user/20045/card/show" data-user-id="20045">
+                  <img class="avatar-sm" src="files/default/2016/11-05/154549dc41d0735569.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class="js-user-card" href="#" data-card-url="/user/20023/card/show" data-user-id="20023">
+                  <img class="avatar-sm" src="files/default/2016/11-04/102353920640851851.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/20003/card/show" data-user-id="20003">
+                  <img class="avatar-sm" src="files/user/2016/11-03/14314731b3e8046923.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/18983/card/show" data-user-id="18983">
+                  <img class="avatar-sm" src="files/default/2016/08-26/191211b21a52901350.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19989/card/show" data-user-id="19989">
+                  <img class="avatar-sm" src="files/user/2016/11-02/164205d74b33481914.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/10201/card/show" data-user-id="10201">
+                  <img class="avatar-sm" src="files/user/2015/02-27/1536215f1d5f592895.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19967/card/show" data-user-id="19967">
+                  <img class="avatar-sm" src="files/default/2016/11-01/161334ed6441212630.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19580/card/show" data-user-id="19580">
+                  <img class="avatar-sm" src="files/user/2016/10-10/093506a4454f078141.png">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19901/card/show" data-user-id="19901">
+                  <img class="avatar-sm" src="assets/img/default/avatar.png">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19899/card/show" data-user-id="19899">
+                  <img class="avatar-sm" src="files/user/2016/10-28/194116c17d4c969516.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19865/card/show" data-user-id="19865">
+                  <img class="avatar-sm" src="files/user/2016/10-27/1240055c21e5210127.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19858/card/show" data-user-id="19858">
+                  <img class="avatar-sm" src="files/user/2016/10-26/220010a5ce38590813.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19857/card/show" data-user-id="19857">
+                  <img class="avatar-sm" src="files/user/2016/10-26/2142008cd116494724.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19851/card/show" data-user-id="19851">
+                  <img class="avatar-sm" src="files/default/2016/10-26/16322594d9b9700458.jpg">
+
+  </a>
+  
+          </li>
+                          <li>
+              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19602/card/show" data-user-id="19602">
+                  <img class="avatar-sm" src="files/user/2016/10-11/105733dbb33c827705.png">
+
+  </a>
+  
+          </li>
+              </ul>
+      </div>
+</div>
+
+                
+                  
+
+
+<div class="panel panel-default student-dynamic">
+
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="es-icon es-icon-recentactors"></i>学员动态</h3>
+  </div>
+
+  <div class="panel-body">
+  
+                        <div class="media media-number-o color-gray text-overflow">
+                <a class="link-dark " href="javascript:;">DavidCao</a>
+  
+            
+  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">移动端内容管理</a>
+
+          </div>
+                                 <div class="media media-number-o color-gray text-overflow">
+                <a class="link-dark " href="javascript:;">DavidCao</a>
+  
+            
+  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">资讯管理</a>
+
+          </div>
+                                 <div class="media media-number-o color-gray text-overflow">
+                <a class="link-dark " href="javascript:;">DavidCao</a>
+  
+            
+			加入课程 <a class="link-dark" href="/course/427" title="来自《运营管理》">运营管理</a>
+	  
+
+          </div>
+                                 <div class="media media-number-o color-gray text-overflow">
+                <a class="link-dark " href="javascript:;">bustic</a>
+  
+            
+  学完了课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">学习卡管理</a>
+
+          </div>
+                                 <div class="media media-number-o color-gray text-overflow">
+                <a class="link-dark " href="javascript:;">温皇</a>
+  
+            
+  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">小组管理</a>
+
+          </div>
+               
+      </div>
+
+</div>
+
+        
+          </div>
+  </div>
+
+  
+  
+      </div>
+			
+			<div class="es-footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+							<a class="" href="http://www.电教馆.com" target="_blank"><img src="assets/v2/img/bottom_logo.png" alt="建议图片大小为233*64"></a>
+							<div class="footer-sns">
+								<a href="javascript:;" target="_blank"><i class="es-icon es-icon-weibo"></i></a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-weixin"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/weixin.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-apple"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/apple.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-android"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/android.png" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-8 footer-main clearfix">
+							<div class="link-item ">
+								<h3>我是学生</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">如何注册</a>
+									</li>
+									<li>
+										<a href="javascript:;">如何学习</a>
+									</li>
+									<li>
+										<a href="javascript:;">如何互动</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是老师</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">发布课程</a>
+									</li>
+									<li>
+										<a href="javascript:;">使用题库</a>
+									</li>
+									<li>
+										<a href="javascript:;">教学资料库</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是管理员</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">系统设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">课程设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">用户管理</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item hidden-xs">
+								<h3>关于我们</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">电教馆官网</a>
+									</li>
+									<li>
+										<a href="javascript:;">官方微博</a>
+									</li>
+									<li>
+										<a href="javascript:;">加入我们</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<footer class="es-footer">
+				<div class="copyright">
+					<div class="container">
+						由
+						<a href="http://www.chinaschooling.com.cn/">上学啦网络信息技术有限公司</a>提供技术支持
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- 侧边栏快捷操作  -->
+		<div class="es-bar hidden-xs">
+
+			<!-- 左侧列表 -->
+			<div class="es-bar-menu">
+				<ul class="bar-menu-top">
+					<li data-id="#bar-user-center" class="bar-user">
+						<a href="javascript:;" data-url="/esbar/my/study_center">学<br>习<br>中<br>心</a>
+					</li>
+					<li data-id="#bar-homework" data-toggle="tooltip" data-placement="left" title="我的考试/作业">
+						<a href="javascript:;" data-url="/esbar/my/practice/reviewing"><i class="es-icon es-icon-edit"></i></a>
+					</li>
+					<li data-id="#bar-course-list" data-placement="left" data-toggle="tooltip" title="我的课程/班级">
+						<a data-url="/esbar/my/course" href="javascript:;">
+							<i class="es-icon es-icon-book">
+    </i>
+						</a>
+					</li>
+					<li data-id="#bar-message" data-toggle="tooltip" data-placement="left" title="通知">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-notifications"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="bar-menu-sns">
+					<li class="popover-btn bar-qq-btn" data-container=".bar-qq-btn" data-title="QQ客服及QQ群" data-content-element="#bar-qq-content">
+						<a><i class="es-icon es-icon-qq"></i></a>
+					</li>
+					<li class="popover-btn bar-phone-btn" data-container=".bar-phone-btn" data-title="电话客服" data-content-element="#bar-phone-content">
+						<a><i class="es-icon es-icon-phone"></i></a>
+					</li>
+					<li class="popover-btn bar-weixin-btn" data-container=".bar-weixin-btn" data-content-element="#bar-weixin-content">
+						<a><i class="es-icon es-icon-weixin"></i></a>
+					</li>
+
+					<li data-toggle="tooltip" data-placement="left" title="手机端">
+						<a href="/mobile/" target="_blank"><i class="es-icon es-icon-phone1"></i></a>
+					</li>
+					<li class="go-top" style="margin:-10px auto 0 auto;" data-toggle="tooltip" data-placement="left" title="回到顶端">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-keyboardarrowup" style="margin-bottom:-8px"></i>
+							<span class="text-sm">TOP</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+		<div id="modal" class="modal"></div>
+		<div id="attachment-modal" class="modal"></div>
+
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/swiper/2.7.6/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+	</html>
