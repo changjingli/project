@@ -42,13 +42,14 @@
 		</style>
   <![endif]-->
 		<style type="text/css">
-			/*.buy {
-				position: absolute;
-				bottom: 20px;
-				right: 30px;
-			}*/
 			.btn-primary {
 				background-color: rgb(51, 195, 136);
+			}
+			.nav-tabs > .active {
+				border-bottom: 2px solid #46c37b;
+			}
+			.course-chapter, .chapter-intro {
+				margin: 1em 0;
 			}
 		</style>
 	</head>
@@ -285,45 +286,107 @@
       <a class="btn btn-primary btn-lg" href="#modal" data-toggle="modal" data-url="/course/427/buy?targetType=course">加入我的课程</a>
     </div>
   </div>
-
 </div>
   </div>
 </section>
-			
 			<div id="content-container" class="container">
-        
     <div class="course-detail row">
     <div class="col-lg-9 col-md-8  course-detail-main">
-      <section class="es-section">
-        
-<div class="nav-btn-tab">
-  <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="/course/427">课程概览</a></li>
-      <li role="presentation"><a href="/course/427/lesson/list">课时列表</a></li>
-      <li role="presentation"><a href="/course/427/reviews/">评价 <small class="text-muted">( 2 )</small></a>
-      </li>
-      <li role="presentation"><a href="/course/427/notes"> 笔记 <small class="text-muted">( 5 )</small></a></li>
-    
-  <li class="highlight" style="left: 0px; width: 124px; overflow: hidden;"></li></ul>
+<!--选项卡切换-->
+<section class="es-section">
+	<div class="nav-btn-tab">
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active" id="list"><a href="javascript:;">课时列表</a></li>
+	    <li role="presentation" id="discuss"><a href="javascript:;">讨论区 <!--<small class="text-muted">( 2 )</small>--></a></li>
+	    <li role="presentation" id="overview"><a href="javascript:;">概览 <small class="text-muted">( 5 )</small></a></li>
+	</div>        
+<div class="course-detail-content" id="list-tab">
+	<div class="es-piece">
+		<div class="piece-body p-lg clearfix">
+			<div class="course-detail-main">
+				<div class="row course-chapter">
+				  <div class="col-md-1 tac">第一章</div>
+				  <div class="col-md-9">英语入门 《读准音标与字母》</div>
+				  <div class="col-md-2"></div>
+				</div>
+				<div class="row course-chapter">
+				  <div class="col-md-1 tac text-muted">1</div>
+				  <div class="col-md-9">英语入门 ( 1 )：字母的名称音与发音</div>
+				  <div class="col-md-2 tar text-muted">00:18:04</div>
+				</div>
+				<div class="row chapter-intro">
+				  <div class="col-md-1 tac text-muted"></div>
+				  <div class="col-md-11 text-muted text-justify">英语入门 ( 1 )：字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~</div>
+				</div>
+				<div class="row course-chapter">
+				  <div class="col-md-1 tac text-muted">2</div>
+				  <div class="col-md-9">英语入门 ( 2 )：用去尾法学习辅音发音</div>
+				  <div class="col-md-2 tar text-muted">00:18:10</div>
+				</div>
+				<div class="row chapter-intro">
+				  <div class="col-md-1 tac text-muted"></div>
+				  <div class="col-md-11 text-muted text-justify">英语入门 ( 2 )：用去尾法学习辅音发音</div>
+				</div>
+				<div class="row course-chapter">
+				  <div class="col-md-1 tac text-muted">3</div>
+				  <div class="col-md-9">英语入门 ( 3 )：对比法学习辅音发音</div>
+				  <div class="col-md-2 tar text-muted">00:20:11</div>
+				</div>
+				<div class="row chapter-intro">
+				  <div class="col-md-1 tac text-muted"></div>
+				  <div class="col-md-11 text-muted text-justify">英语入门 ( 3 )：对比法学习辅音发音</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-  </div>        
-  <div class="course-detail-content" data-widget-cid="widget-1">
+<div class="course-detail-content" id="discuss-tab">
+	<div class="es-piece">
+        <div class="piece-header">讨论区</div>
+        <div class="piece-body p-lg clearfix">
+            <p>&nbsp; &nbsp; 讨论区。</p>
+        </div>
+    </div>
+</div>
+
+<div class="course-detail-content" id="overview-tab">
 
 		      <div class="es-piece">
         <div class="piece-header">
           课程介绍
         </div>
         <div class="piece-body p-lg clearfix">
-                      <div class="text-muted">暂无课程简介</div>
+                      <p>&nbsp; &nbsp; 本课程演示直播教室。</p>
+
                   </div>
-      </div>    
-  </div>
-      </section>
+      </div>
+
+              <div class="es-piece">
+          <div class="piece-header">
+            课程目标
+          </div>
+          <div class="piece-body">
+            <ul class="piece-body-list">
+               <li>
+                <i class="es-icon es-icon-chevronright"></i> 学习直播教室的使用
+              </li>
+              <li>
+                <i class="es-icon es-icon-chevronright"></i> 了解EduSoho直播教室的基本功能
+              </li>
+              <li>
+                <i class="es-icon es-icon-chevronright"></i> 体验直播教室
+              </li>
+            </ul>
+          </div>
+        </div>
+       
+</div>
+</section>
+<!--选项卡切换 结束-->
     </div>
     <div class="col-lg-3 col-md-4  course-sidebar">
-  
-                  
-                  <div class="panel panel-default">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"> <i class="es-icon es-icon-assignmentind"></i>
       授课教师
@@ -384,16 +447,12 @@
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/18983/card/show" data-user-id="18983">
                   <img class="avatar-sm" src="files/default/2016/08-26/191211b21a52901350.jpg">
-
-  </a>
-  
+</a>
           </li>
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/19989/card/show" data-user-id="19989">
                   <img class="avatar-sm" src="files/user/2016/11-02/164205d74b33481914.jpg">
-
   </a>
-  
           </li>
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/10201/card/show" data-user-id="10201">
@@ -426,16 +485,12 @@
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/19899/card/show" data-user-id="19899">
                   <img class="avatar-sm" src="files/user/2016/10-28/194116c17d4c969516.jpg">
-
   </a>
-  
           </li>
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/19865/card/show" data-user-id="19865">
                   <img class="avatar-sm" src="files/user/2016/10-27/1240055c21e5210127.jpg">
-
-  </a>
-  
+</a>
           </li>
                           <li>
               <a class=" js-user-card" href="javascript:;" data-card-url="/user/19858/card/show" data-user-id="19858">
@@ -505,15 +560,10 @@
           </div>
                                  <div class="media media-number-o color-gray text-overflow">
                 <a class="link-dark " href="javascript:;">bustic</a>
-  
-            
   学完了课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">学习卡管理</a>
-
           </div>
                                  <div class="media media-number-o color-gray text-overflow">
                 <a class="link-dark " href="javascript:;">温皇</a>
-  
-            
   开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">小组管理</a>
 
           </div>
@@ -521,15 +571,9 @@
       </div>
 
 </div>
-
-        
           </div>
   </div>
-
-  
-  
       </div>
-			
 			<div class="es-footer-link">
 				<div class="container">
 					<div class="row">
@@ -689,10 +733,23 @@
 
 		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="assets/libs/swiper/2.7.6/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				// 选项卡切换
+				$(".nav-tabs > li").on('click', function (e) {
+					// 去除active属性
+					var _this = this;
+					var id = _this.id;
+					
+					$(_this).addClass('active').siblings().removeClass('active');
+					$("#list-tab, #discuss-tab, #overview-tab").hide();
+					$("#" + id + '-tab').show();
+				});
+			});
+		</script>
 	</body>
 
 	</html>
