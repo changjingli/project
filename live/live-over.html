@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>直播结束 - 电教馆网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By 电教馆</title>
+		<meta name="keywords" content="电教馆网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="电教馆是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。电教馆提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，电教馆也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。电教馆产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，电教馆具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。电教馆开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+		
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+    <style type="text/css">
+			@font-face {
+				font-family: "es-icon";
+				src: url('assets/v2/fonts/es-icon.eot');
+				/* IE9*/
+				src: url('assets/v2/fonts/es-icon.eot?t=1459854189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('assets/v2/fonts/es-icon.woff?t=1459854189') format('woff'), /* chrome, firefox */
+				url('assets/v2/fonts/es-icon.ttf?t=1459854189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+				url('assets/v2/fonts/es-icon.svg?t=1459854189#es-icon') format('svg');
+				/* iOS 4.1- */
+			}
+		</style>
+  <![endif]-->
+  <style type="text/css">
+	.es-header {
+		line-height: 60px;
+	}
+	.live-back {
+		font-size: 2rem;
+		color: #fff;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	}
+	.lesson-dashboard .lesson-content-text-body {
+		/*margin: 30px auto;*/
+	}
+	.course-item-list-in-toolbar-pane {
+		overflow-y: visible;
+		background: #000;
+	}
+	.lesson-dashboard {
+		top: 60px;
+	}
+	.lesson-dashboard .dashboard-body {
+		top: 0;
+	}
+	.title-group {
+		background-color: transparent !important;
+		box-sizing: content-box;
+	}
+	.lesson-dashboard .toolbar-pane-container {
+		right: 0;
+	}
+	.period-list .period {
+		padding: 10px 15px;
+	}
+	.period-list .period > a, .period-list .period .title {
+		color: #fff;
+	}
+	.period-list .item-active > a, .period-list .item-active .title {
+		color: #1cb177;
+	}
+	.period-list .period:hover, .period-list .period.item-active {
+		background-color: inherit;
+	}
+  </style>
+
+	</head>
+
+	<body>
+
+		<div class="es-wrap">
+
+			<header class="es-header navbar">
+				<div class="container">
+					<i onclick="javascript:history.back();" class="es-icon es-icon-chevronleft live-course-body live-back">返回课程</i>
+				</div>
+			</header>
+			
+			<div class="lesson-dashboard lesson-dashboard-open" id="lesson-dashboard" data-course-id="283" data-course-uri="/course/283" data-dashboard-uri="/course/283/learn" data-watch-limit="" data-starttime="" data-hide-media-lesson-learn-btn="" data-widget-cid="widget-0">
+    <div class="dashboard-content">
+      <div class="dashboard-body">
+        <div class="lesson-content lesson-content-text ps-container" id="lesson-live-content" data-role="lesson-content" style="">
+          <div class="lesson-content-text-body title-group">课时3 直播教室体验</div>
+          <div class="lesson-content-text-body"><p>直播已经结束</p><div style="padding-bottom:15px; border-bottom:1px dashed #ccc;"><p>本教室仅提供查看直播教室的构成，无教师上课~&nbsp; 如需体验教师端的功能，请联系客服，或者自助购买云直播服务~</p>
+
+</div><br></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="toolbar toolbar-open" id="lesson-dashboard-toolbar" data-widget-cid="widget-1">
+      <div class="toolbar-pane-container">
+      <div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;"><div class="course-item-list-in-toolbar-pane ps-container">
+    <ul class="period-list" id="course-item-list">
+              <li class="period lesson-item lesson-item-2790 item-active" data-id="2790" data-num="1">
+            <a href="javascript:;" title="直播教室体验">
+      <span class="title">课时1：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2791" data-id="2791" data-num="2">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时2：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2792" data-id="2792" data-num="3">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时3：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2793" data-id="2793" data-num="4">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时4：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2794" data-id="2794" data-num="5">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时5：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2795" data-id="2795" data-num="6">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时6：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2796" data-id="2796" data-num="7">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时7：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2797" data-id="2797" data-num="8">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时8：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2798" data-id="2798" data-num="9">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时9：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2799" data-id="2799" data-num="10">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时10：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2800" data-id="2800" data-num="11">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时11：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2801" data-id="2801" data-num="12">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时12：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2802" data-id="2802" data-num="13">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时13：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2803" data-id="2803" data-num="14">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时14：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2804" data-id="2804" data-num="15">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时15：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2805" data-id="2805" data-num="16">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时16：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2806" data-id="2806" data-num="17">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时17：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2807" data-id="2807" data-num="18">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时18：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2808" data-id="2808" data-num="19">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时19：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2809" data-id="2809" data-num="20">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时20：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2810" data-id="2810" data-num="21">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时21：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2811" data-id="2811" data-num="22">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时22：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2812" data-id="2812" data-num="23">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时23：直播教室体验</span>
+   
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2813" data-id="2813" data-num="24">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时24：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2814" data-id="2814" data-num="25">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时25：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2815" data-id="2815" data-num="26">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时26：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2816" data-id="2816" data-num="27">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时27：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2817" data-id="2817" data-num="28">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时28：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2818" data-id="2818" data-num="29">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时29：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2819" data-id="2819" data-num="30">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时30：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2820" data-id="2820" data-num="31">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时31：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2821" data-id="2821" data-num="32">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时32：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2822" data-id="2822" data-num="33">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时33：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2823" data-id="2823" data-num="34">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时34：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2824" data-id="2824" data-num="35">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时35：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2825" data-id="2825" data-num="36">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时36：直播教室体验</span>
+    
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2826" data-id="2826" data-num="37">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时37：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2827" data-id="2827" data-num="38">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时38：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2828" data-id="2828" data-num="39">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时39：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2829" data-id="2829" data-num="40">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时40：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2830" data-id="2830" data-num="41">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时41：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2831" data-id="2831" data-num="42">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时42：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2832" data-id="2832" data-num="43">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时43：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2833" data-id="2833" data-num="44">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时44：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2834" data-id="2834" data-num="45">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时45：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2835" data-id="2835" data-num="46">
+            <a href="javascript:;" title="直播教室体验">
+        
+      <span class="title">课时46：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+      
+        <small class="type">
+                      直播结束
+                  </small>
+
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2836" data-id="2836" data-num="47">
+            <a href="/course/283/lesson/2836/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时47：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月07日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2838" data-id="2838" data-num="48">
+            <a href="/course/283/lesson/2838/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时48：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月08日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2837" data-id="2837" data-num="49">
+            <a href="/course/283/lesson/2837/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时49：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月09日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2839" data-id="2839" data-num="50">
+            <a href="/course/283/lesson/2839/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时50：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月10日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2848" data-id="2848" data-num="51">
+            <a href="/course/283/lesson/2848/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时51：直播教室体验</span>
+ 
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月11日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2847" data-id="2847" data-num="52">
+            <a href="/course/283/lesson/2847/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时52：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月12日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2849" data-id="2849" data-num="53">
+            <a href="/course/283/lesson/2849/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时53：直播教室体验</span>
+
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月13日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2850" data-id="2850" data-num="54">
+            <a href="/course/283/lesson/2850/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时54：直播教室体验</span>
+  
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月14日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li>                      <li class="period lesson-item lesson-item-2851" data-id="2851" data-num="55">
+            <a href="/course/283/lesson/2851/live_entry" target="_blank" title="直播教室体验">
+        
+      <span class="title">课时55：直播教室体验</span>
+   
+    <span class="course-type">
+      <i class="es-icon es-icon-videocam" data-toggle="tooltip" data-placement="top" title="" data-original-title="直播课程"></i>
+              <small class="type">11月15日
+                    12：00
+        </small>
+          </span>
+  
+      </a>
+      </li> </ul>
+  </div></div></div>
+    </div>
+
+  </div>
+			
+		</div>
+		
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#course-item-list > li").on('click', function () {
+					$(this).addClass('item-active').siblings().removeClass('item-active');
+				});
+			});
+		</script>
+	</body>
+
+	</html>
