@@ -56,8 +56,9 @@
 		/*margin: 30px auto;*/
 	}
 	.course-item-list-in-toolbar-pane {
+		top: 40px;
 		overflow-y: visible;
-		background: #000;
+		background: #404040;
 	}
 	.lesson-dashboard {
 		top: 60px;
@@ -83,6 +84,40 @@
 	}
 	.period-list .period:hover, .period-list .period.item-active {
 		background-color: inherit;
+	}
+	
+	/*选项卡*/
+	.nav.nav-tabs {
+		margin: 0 auto;
+		border-bottom: 2px solid #5e5e5e;
+		background: #404040;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 7%;
+	}
+	.nav.nav-tabs > li {
+		font-size: 16px;
+		height: 40px;
+		color: #fff;
+		width: 33.33%;
+		cursor: pointer;
+	}
+	.nav-tabs > .active {
+		color: #1cb177 !important;
+		border-bottom: 2px solid #46c37b;
+	}
+	.nav.nav-tabs > li:hover {
+		color: #1cb177 !important;
+	}
+	/*选项卡结束*/
+	
+	#ask-tab, #note-tab {
+		padding: 0 15px;
+		color: #fff;
+		background: #f5f5f5;
+	}
+	.form-group {
+		margin: 15px 0;
 	}
   </style>
 
@@ -113,7 +148,46 @@
 
     <div class="toolbar toolbar-open" id="lesson-dashboard-toolbar" data-widget-cid="widget-1">
       <div class="toolbar-pane-container">
-      <div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;"><div class="course-item-list-in-toolbar-pane ps-container">
+     <div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;">
+     	
+	    <div class="">
+		    <ul class="nav nav-tabs" id="nav-tab">
+		    	<li id="menu" class="tac active">目录</li>
+		    	<li id="ask" class="tac">问答</li>
+		    	<li id="note" class="tac">笔记</li>
+		    </ul>	
+	    </div>
+	    <div class="course-item-list-in-toolbar-pane ps-container" id="ask-tab" style="display: none;">
+	    	<div class="form-group">
+				<div class="controls">
+			    	<textarea id="question_title" class="form-control expand-form-trigger" placeholder="我要提问"></textarea>
+		    	</div>
+			</div>
+			<div class="form-group detail-form-group">
+				<div class="controls clearfix">
+					<button class="btn btn-primary btn-sm pull-right" type="submit">提问</button>
+					<button class="btn btn-link btn-sm collapse-form-btn pull-right" type="button">取消</button>
+				</div>
+			</div>
+			<ul class="media-list thread-list-small mtl" data-role="list">
+				  <li class="empty-item">此课时还没有问题</li>
+			</ul>
+	    </div>
+	    
+	    <div class="course-item-list-in-toolbar-pane ps-container" id="note-tab" style="display: none;">
+	    	<div class="form-group">
+				<div class="controls">
+			    	<textarea id="question_title" class="form-control expand-form-trigger" placeholder="说点什么"></textarea>
+		    	</div>
+			</div>
+			<div class="form-group detail-form-group">
+				<div class="controls clearfix">
+					<button class="btn btn-primary btn-sm pull-right">保存笔记</button>
+				</div>
+			</div>
+	    </div>
+	    
+     	<div class="course-item-list-in-toolbar-pane ps-container" id="menu-tab">
     <ul class="period-list" id="course-item-list">
               <li class="period lesson-item lesson-item-2790 item-active" data-id="2790" data-num="1">
             <a href="javascript:;" title="直播教室体验">
@@ -936,8 +1010,18 @@
 		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function () {
+				// 课程点击事件
 				$("#course-item-list > li").on('click', function () {
 					$(this).addClass('item-active').siblings().removeClass('item-active');
+				});
+				// 目录选项卡切换
+				$("#nav-tab > li").on('click', function () {
+					var _this = this;
+					var id = _this.id;
+					
+					$(_this).addClass('active').siblings().removeClass('active');
+					$("#menu-tab, #note-tab, #ask-tab").hide();
+					$("#" + id + '-tab').show();
 				});
 			});
 		</script>
