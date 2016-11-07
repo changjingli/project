@@ -41,6 +41,16 @@
 		</style>
   <![endif]-->
   <style type="text/css">
+  	.w12p {
+  		width: 12% !important;
+  	}
+  	.w20p {
+  		width: 20% !important;
+  	}
+  	.w35p {
+  		width: 35% !important;
+  	}
+  	/*-------------------------*/
 	.es-header {
 		line-height: 60px;
 	}
@@ -52,12 +62,9 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 	}
-	.lesson-dashboard .lesson-content-text-body {
-		/*margin: 30px auto;*/
-	}
 	.course-item-list-in-toolbar-pane {
 		top: 40px;
-		overflow-y: visible;
+		/*overflow-y: visible;*/
 		background: #404040;
 	}
 	.lesson-dashboard {
@@ -128,7 +135,7 @@
 		margin: 15px 0;
 	}
 	#menu-tab {
-		padding-bottom: 40px;
+		padding-bottom: 85px;
 	}
 	/*用户选项区*/
 	.inputs input, .inputs button {
@@ -145,6 +152,63 @@
 		color: #fff;
 		background-color: #0095da;
 		letter-spacing: 3px;
+	}
+	.zan {
+		margin-top: -20px;
+	}
+	#zan:hover .zan {
+		transform: rotate(-20deg);
+		transform-origin: left;
+	}
+	/*表情*/
+	.emoji {
+		display: none;
+		position: relative;
+		padding: 15px 0;
+		background-color: #fff;
+		margin-bottom: 14px;
+		border: 1px solid #5e5e5e;
+		z-index: 99;
+	}
+	
+	.emoji:before {
+		position: absolute;
+		left: 49%;
+		bottom: -15px;
+		width: 30px;
+		height: 30px;
+		background: inherit;
+		transform: rotate(45deg);
+		z-index: 9;
+		content: '';
+	}
+	
+	.emoji ul, .chats {
+		margin: 0;
+		padding: 0;
+		overflow: auto;
+		list-style: none;
+	}
+	.chats li {
+		color: #fff;
+		padding-left: 5px;
+	}
+	.chats .author {
+		margin-right: 5px;
+		color: rgb(51, 204, 0);
+	}
+	.chats .content {
+		padding-left: 10px;
+	}
+	.emoji ul li {
+		float: left;
+		width: 16.66%;
+		text-align: center;
+		cursor: pointer;
+	}
+	.emoji ul li img {
+		width: 80%;
+		max-width: 100%;
 	}
   </style>
 
@@ -194,14 +258,50 @@
 		    </ul>	
 	    </div>
      	<div class="course-item-list-in-toolbar-pane ps-container" id="menu-tab">
-	    	<ul class="period-list" id="course-item-list">
+	    	<ul class="chats" id="course-item-list">
+	    		<li>
+	    			<p class="title"><span class="author">嘿嘿</span>18:24:26</p>
+	    			<p class="content">fdfdfdfd</p>
+	    		</li>
 	        </ul>
 	        <div class="options">
-	        	<div class="icons">
+	        	<!--<div class="icons">
 	        		<ul class="nav nav-tabs" id="nav-tab-icon">
 				    	<li class="tac"><i class="glyphicon glyphicon-thumbs-up"></i> (222)</li>
 				    	<li class="tac"><i class="glyphicon glyphicon-gift"></i></li>
 				    	<li class="tac"><i class="glyphicon glyphicon-th-large"></i></li>
+				    </ul>
+	        	</div>-->
+	        	<div class="emoji">
+	        		<ul>
+	        			<li><img src="files/emoji/2016/11-07/1.png" alt="表情1" /></li>
+	        			<li><img src="files/emoji/2016/11-07/2.png" alt="表情2" /></li>
+	        			<li><img src="files/emoji/2016/11-07/3.png" alt="表情3" /></li>
+	        			<li><img src="files/emoji/2016/11-07/4.png" alt="表情4" /></li>
+	        			<li><img src="files/emoji/2016/11-07/5.png" alt="表情5" /></li>
+	        			<li><img src="files/emoji/2016/11-07/6.png" alt="表情6" /></li>
+	        			<li><img src="files/emoji/2016/11-07/7.png" alt="表情7" /></li>
+	        			<li><img src="files/emoji/2016/11-07/8.png" alt="表情8" /></li>
+	        			<li><img src="files/emoji/2016/11-07/9.png" alt="表情9" /></li>
+	        			<li><img src="files/emoji/2016/11-07/10.png" alt="表情10" /></li>
+	        			<li><img src="files/emoji/2016/11-07/11.png" alt="表情11" /></li>
+	        			<li><img src="files/emoji/2016/11-07/12.png" alt="表情12" /></li>
+	        			<li><img src="files/emoji/2016/11-07/13.png" alt="表情13" /></li>
+	        			<li><img src="files/emoji/2016/11-07/14.png" alt="表情14" /></li>
+	        			<li><img src="files/emoji/2016/11-07/15.png" alt="表情15" /></li>
+	        			<li><img src="files/emoji/2016/11-07/16.png" alt="表情16" /></li>
+	        			<li><img src="files/emoji/2016/11-07/17.png" alt="表情17" /></li>
+	        			<li><img src="files/emoji/2016/11-07/18.png" alt="表情18" /></li>
+	        		</ul>
+	        	</div>
+	        	<div class="icons">
+	        		<ul class="nav nav-tabs" id="nav-tab-icon">
+	        			<li class="tac w35p" id="zan"><img class="zan" src="assets/img/default/zan.png"/> (222)</li>
+				    	<li class="tac w12p"><i class="glyphicon glyphicon-gift"></i></li>
+				    	<li id="js-emoji" class="tac w12p"><i class="glyphicon glyphicon-th"></i></li>	
+			    	
+			    		<li class="w20p"><input type="radio" name="see" id="see1" value="0" checked /><label for="see1">看全部</label></li>
+	    				<li class="w20p"><input type="radio" name="see" id="see2" value="1"/><label for="see2">看老师</label></li>
 				    </ul>
 	        	</div>
 	        	<div class="inputs">
@@ -222,6 +322,7 @@
 		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/living.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 	</html>
