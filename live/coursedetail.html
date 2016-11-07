@@ -45,11 +45,29 @@
 			.btn-primary {
 				background-color: rgb(51, 195, 136);
 			}
-			.nav-tabs > .active {
+			
+			.nav-tabs> .active {
 				border-bottom: 2px solid #46c37b;
 			}
-			.course-chapter, .chapter-intro {
+			
+			.course-chapter,
+			.chapter-intro {
 				margin: 1em 0;
+			}
+			.course-detail-content img {
+				max-width: initial;
+			}
+			#question_title {
+				margin: 1em 0;
+			}
+			.comment, .pages {
+				padding: 10px 0;
+			}
+			.pages .btn {
+				margin: 0 2px;
+			}
+			.comment label {
+				margin-left: 5px;
 			}
 		</style>
 	</head>
@@ -128,7 +146,7 @@
 					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
 
 						<li class="">
-							<a href="live.html">首页 </a>
+							<a href="live.html">首页</a>
 						</li>
 
 						<li class="nav-hover">
@@ -214,36 +232,47 @@
 								<a href="register.html">注册</a>
 							</li>
 						</ul>-->
-						
+
 						<!--登陆后使用这个ul-->
-						
+
 						<ul class="nav user-nav">
-				                <li class="user-avatar-li nav-hover">
-				          <a href="javascript:;" class="dropdown-toggle">
-				            <img class="avatar-xs" src="files/default/2016/11-05/213307335114750678.jpg">
-				          </a>
-				          <ul class="dropdown-menu" role="menu">
-				            <li role="presentation" class="dropdown-header">伊见倾橙</li>
-				            <li><a href="javascript:;"><i class="es-icon es-icon-person"></i>个人主页</a></li>
-				            <li><a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a></li>
-				            <li class="hidden-lg">
-				              <a href="/my">
-				                <i class="es-icon es-icon-eventnote"></i>我的学习              </a>
-				            </li>
-				            <li><a href="/my/coin"><i class="es-icon es-icon-accountwallet"></i>账户中心</a></li>
-				
-				            
-				            <li class="hidden-lg"><a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a></li>
-				            <li class="hidden-lg"><a href="/message/"><span class="pull-right num">1</span><i class="es-icon es-icon-mail"></i>私信</a></li>
-				            <li><a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a></li>
-				          </ul>
-				        </li>
-				        <li class="visible-lg">
-				          <a href="my">我的学习</a>
-				        </li>
-				          </ul>
-				        </li>
-                      </ul>
+							<li class="user-avatar-li nav-hover">
+								<a href="javascript:;" class="dropdown-toggle">
+									<img class="avatar-xs" src="files/default/2016/11-05/213307335114750678.jpg">
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li role="presentation" class="dropdown-header">伊见倾橙</li>
+									<li>
+										<a href="javascript:;"><i class="es-icon es-icon-person"></i>个人主页</a>
+									</li>
+									<li>
+										<a href="/settings/"><i class="es-icon es-icon-setting"></i>个人设置</a>
+									</li>
+									<li class="hidden-lg">
+										<a href="/my">
+											<i class="es-icon es-icon-eventnote"></i>我的学习 </a>
+									</li>
+									<li>
+										<a href="/my/coin"><i class="es-icon es-icon-accountwallet"></i>账户中心</a>
+									</li>
+
+									<li class="hidden-lg">
+										<a href="/notification"><span class="pull-right num"></span><i class="es-icon es-icon-notificationson"></i>通知</a>
+									</li>
+									<li class="hidden-lg">
+										<a href="/message/"><span class="pull-right num">1</span><i class="es-icon es-icon-mail"></i>私信</a>
+									</li>
+									<li>
+										<a href="/logout"><i class="es-icon es-icon-power"></i>退出登录</a>
+									</li>
+								</ul>
+							</li>
+							<li class="visible-lg">
+								<a href="my">我的学习</a>
+							</li>
+						</ul>
+						</li>
+						</ul>
 						<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
 							<div class="form-group">
 								<input class="form-control js-search" name="q" placeholder="搜索">
@@ -253,327 +282,403 @@
 					</div>
 				</nav>
 			</header>
-			
+
 			<section class="course-detail-header before">
-  <div class="container">
+				<div class="container">
 
-    <div class="es-section clearfix">
-      
-    <div class="course-img">
-    
-    <img class="img-responsive" src="files/course/2016/10-31/1036066b465e703375.jpg" alt="运营管理">
-    <div class="tags">
-                </div>
-  </div>
+					<div class="es-section clearfix">
 
+						<div class="course-img">
 
-      <div class="course-info">
-    <h2 class="title">运营管理</h2>
-    <div class="subtitle total">课程总数：10</div>
-    <div class="subtitle exp">学习有效期：1218天</div>
-    <div class="subtitle count">学习次数：4.4万</div>
-    <div class="subtitle satisfy">学生满意度：98.11%</div>
-    <div class="metas">
-	    <p class="discount-price">
-			<span class="course-price-widget">
+							<img class="img-responsive" src="files/course/2016/10-31/1036066b465e703375.jpg" alt="运营管理">
+							<div class="tags">
+							</div>
+						</div>
+
+						<div class="course-info">
+							<h2 class="title">运营管理</h2>
+							<div class="subtitle total">课程总数：10</div>
+							<div class="subtitle exp">学习有效期：1218天</div>
+							<div class="subtitle count">学习次数：4.4万</div>
+							<div class="subtitle satisfy">学生满意度：98.11%</div>
+							<div class="metas">
+								<p class="discount-price">
+									<span class="course-price-widget">
 				<span class="price">
 					<span class="text-success">免费</span>
-				</span>
-			</span>
-	    </p>
-    </div>
-    <div class="buy">
-      <a class="btn btn-primary btn-lg" href="#modal" data-toggle="modal" data-url="/course/427/buy?targetType=course">加入我的课程</a>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
+									</span>
+									</span>
+								</p>
+							</div>
+							<div class="buy">
+								<a class="btn btn-primary btn-lg" href="#modal" data-toggle="modal" data-url="/course/427/buy?targetType=course">加入我的课程</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div id="content-container" class="container">
-    <div class="course-detail row">
-    <div class="col-lg-9 col-md-8  course-detail-main">
-<!--选项卡切换-->
-<section class="es-section">
-	<div class="nav-btn-tab">
-	  <ul class="nav nav-tabs" role="tablist">
-	    <li role="presentation" class="active" id="list"><a href="javascript:;">课时列表</a></li>
-	    <li role="presentation" id="discuss"><a href="javascript:;">讨论区 <!--<small class="text-muted">( 2 )</small>--></a></li>
-	    <li role="presentation" id="overview"><a href="javascript:;">概览 <small class="text-muted">( 5 )</small></a></li>
-	</div>        
-<div class="course-detail-content" id="list-tab">
-	<div class="es-piece">
-		<div class="piece-body p-lg clearfix">
-			<div class="course-detail-main">
-				<div class="row course-chapter">
-				  <div class="col-md-1 tac">第一章</div>
-				  <div class="col-md-9">英语入门 《读准音标与字母》</div>
-				  <div class="col-md-2"></div>
-				</div>
-				<div class="row course-chapter">
-				  <div class="col-md-1 tac text-muted">1</div>
-				  <div class="col-md-9">英语入门 ( 1 )：字母的名称音与发音</div>
-				  <div class="col-md-2 tar text-muted">00:18:04</div>
-				</div>
-				<div class="row chapter-intro">
-				  <div class="col-md-1 tac text-muted"></div>
-				  <div class="col-md-11 text-muted text-justify">英语入门 ( 1 )：字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~</div>
-				</div>
-				<div class="row course-chapter">
-				  <div class="col-md-1 tac text-muted">2</div>
-				  <div class="col-md-9">英语入门 ( 2 )：用去尾法学习辅音发音</div>
-				  <div class="col-md-2 tar text-muted">00:18:10</div>
-				</div>
-				<div class="row chapter-intro">
-				  <div class="col-md-1 tac text-muted"></div>
-				  <div class="col-md-11 text-muted text-justify">英语入门 ( 2 )：用去尾法学习辅音发音</div>
-				</div>
-				<div class="row course-chapter">
-				  <div class="col-md-1 tac text-muted">3</div>
-				  <div class="col-md-9">英语入门 ( 3 )：对比法学习辅音发音</div>
-				  <div class="col-md-2 tar text-muted">00:20:11</div>
-				</div>
-				<div class="row chapter-intro">
-				  <div class="col-md-1 tac text-muted"></div>
-				  <div class="col-md-11 text-muted text-justify">英语入门 ( 3 )：对比法学习辅音发音</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+				<div class="course-detail row">
+					<div class="col-lg-9 col-md-8  course-detail-main">
+						<!--选项卡切换-->
+						<section class="es-section">
+							<div class="nav-btn-tab">
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active" id="list">
+										<a href="javascript:;">课时列表</a>
+									</li>
+									<li role="presentation" id="discuss">
+										<a href="javascript:;">讨论区
+											<!--<small class="text-muted">( 2 )</small>--></a>
+									</li>
+									<li role="presentation" id="overview">
+										<a href="javascript:;">概览 <small class="text-muted">( 5 )</small></a>
+									</li>
+							</div>
+							<div class="course-detail-content" id="list-tab">
+								<div class="es-piece">
+									<div class="piece-body p-lg clearfix">
+										<div class="course-detail-main">
+											<div class="row course-chapter">
+												<div class="col-md-1 tac">第一章</div>
+												<div class="col-md-9">英语入门 《读准音标与字母》</div>
+												<div class="col-md-2"></div>
+											</div>
+											<div class="row course-chapter">
+												<div class="col-md-1 tac text-muted">1</div>
+												<div class="col-md-9">英语入门 ( 1 )：字母的名称音与发音</div>
+												<div class="col-md-2 tar text-muted">00:18:04</div>
+											</div>
+											<div class="row chapter-intro">
+												<div class="col-md-1 tac text-muted"></div>
+												<div class="col-md-11 text-muted text-justify">英语入门 ( 1 )：字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~字母的名称音和发音不会读英语又想培育宝宝英语环境，零基础音标课打好坚实基础，大人小孩一起学。宝宝学习期，关键千万别错过孩子的英语最佳学习期。爸妈棒，孩子才能更棒哦~</div>
+											</div>
+											<div class="row course-chapter">
+												<div class="col-md-1 tac text-muted">2</div>
+												<div class="col-md-9">英语入门 ( 2 )：用去尾法学习辅音发音</div>
+												<div class="col-md-2 tar text-muted">00:18:10</div>
+											</div>
+											<div class="row chapter-intro">
+												<div class="col-md-1 tac text-muted"></div>
+												<div class="col-md-11 text-muted text-justify">英语入门 ( 2 )：用去尾法学习辅音发音</div>
+											</div>
+											<div class="row course-chapter">
+												<div class="col-md-1 tac text-muted">3</div>
+												<div class="col-md-9">英语入门 ( 3 )：对比法学习辅音发音</div>
+												<div class="col-md-2 tar text-muted">00:20:11</div>
+											</div>
+											<div class="row chapter-intro">
+												<div class="col-md-1 tac text-muted"></div>
+												<div class="col-md-11 text-muted text-justify">英语入门 ( 3 )：对比法学习辅音发音</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-<div class="course-detail-content" id="discuss-tab">
-	<div class="es-piece">
-        <div class="piece-header">讨论区</div>
-        <div class="piece-body p-lg clearfix">
-            <p>&nbsp; &nbsp; 讨论区。</p>
-        </div>
-    </div>
-</div>
+							<div class="course-detail-content" id="discuss-tab">
+								<div class="topic-list">
+									<div class="media topic-item">
+										<div class="media-left media-middle">
+											<a class="pull-left js-user-card" href="/user/7555" data-card-url="/user/7555/card/show" data-user-id="7555">
+												<img class="avatar-sm" src="files/default/2015/08-31/0910080084cc142484.jpg">
+											</a>
 
-<div class="course-detail-content" id="overview-tab">
+										</div>
+										<div class="media-body">
+											<div class="title">
+												<a href="javascript:;">语文作文怎么写</a>
+											</div>
 
-		      <div class="es-piece">
-        <div class="piece-header">
-          课程介绍
-        </div>
-        <div class="piece-body p-lg clearfix">
-                      <p>&nbsp; &nbsp; 本课程演示直播教室。</p>
+											<div class="metas text-sm">
+												<a href="javascript:;" class="color-gray">张三三</a>
+												<span>非常满意</span> • <span>2天前</span>
+											</div>
+										</div>
+									</div>
+									<div class="media topic-item">
+										<div class="media-left media-middle">
+											<a class="pull-left js-user-card" href="/user/7555" data-card-url="/user/7555/card/show" data-user-id="7555">
+												<img class="avatar-sm" src="files/default/2015/08-31/0910080084cc142484.jpg">
+											</a>
 
-                  </div>
-      </div>
+										</div>
+										<div class="media-body">
+											<div class="title">
+												<a href="javascript:;">语文作文怎么写</a>
+											</div>
 
-              <div class="es-piece">
-          <div class="piece-header">
-            课程目标
-          </div>
-          <div class="piece-body">
-            <ul class="piece-body-list">
-               <li>
-                <i class="es-icon es-icon-chevronright"></i> 学习直播教室的使用
-              </li>
-              <li>
-                <i class="es-icon es-icon-chevronright"></i> 了解EduSoho直播教室的基本功能
-              </li>
-              <li>
-                <i class="es-icon es-icon-chevronright"></i> 体验直播教室
-              </li>
-            </ul>
-          </div>
-        </div>
-       
-</div>
-</section>
-<!--选项卡切换 结束-->
-    </div>
-    <div class="col-lg-3 col-md-4  course-sidebar">
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title"> <i class="es-icon es-icon-assignmentind"></i>
+											<div class="metas text-sm">
+												<a href="javascript:;" class="color-gray">张三三</a>
+												<span>非常满意</span> • <span>2天前</span>
+											</div>
+										</div>
+									</div>
+									<!--单个评论开始-->
+									<div class="media topic-item">
+										<div class="media-left media-middle">
+											<a class="pull-left js-user-card" href="/user/7555" data-card-url="/user/7555/card/show" data-user-id="7555">
+												<img class="avatar-sm" src="files/default/2015/08-31/0910080084cc142484.jpg">
+											</a>
+
+										</div>
+										<div class="media-body">
+											<div class="title">
+												<a href="javascript:;">语文作文怎么写</a>
+											</div>
+
+											<div class="metas text-sm">
+												<a href="javascript:;" class="color-gray">张三三</a>
+												<span>非常满意</span> • <span>2天前</span>
+											</div>
+										</div>
+									</div>
+									<!--单个评论结束-->
+								</div>
+								<div class="controls clearfix pages">
+									<button class="btn btn-default pull-right">末页</button>
+									<button class="btn btn-default pull-right">9</button>
+									<button class="btn btn-default pull-right">8</button>
+									<button class="btn btn-default pull-right">7</button>
+									<button class="btn btn-default pull-right">6</button>
+									<button class="btn btn-default pull-right">5</button>
+									<button class="btn btn-default pull-right">4</button>
+									<button class="btn btn-default pull-right">3</button>
+									<button class="btn btn-default pull-right">2</button>
+									<button class="btn btn-default pull-right">1</button>
+							    	<button class="btn btn-default pull-right">首页</button>
+								</div>
+								<div class="comment">
+									满意程度：
+									<input type="radio" name="satisfy" id="satisfy1" checked value="PERFECT"/><label for="satisfy1">满意</label>
+									<input type="radio" name="satisfy" id="satisfy2" value="MEDIUM"/><label for="satisfy2">一般</label>
+									<input type="radio" name="satisfy" id="satisfy3" value="BAD"/><label for="satisfy3">不满意</label>
+									<div class="controls clearfix">
+										<textarea id="question_title" class="form-control expand-form-trigger" placeholder="说点什么吧"></textarea>
+								    	<button class="btn btn-primary pull-right">评论</button>
+								    </div>
+								</div>
+							</div>
+
+							<div class="course-detail-content" id="overview-tab">
+
+								<div class="es-piece">
+									<div class="piece-header">
+										课程介绍
+									</div>
+									<div class="piece-body p-lg clearfix">
+										<p>&nbsp; &nbsp; 本课程演示直播教室。</p>
+
+									</div>
+								</div>
+
+								<div class="es-piece">
+									<div class="piece-header">
+										课程目标
+									</div>
+									<div class="piece-body">
+										<ul class="piece-body-list">
+											<li>
+												<i class="es-icon es-icon-chevronright"></i> 学习直播教室的使用
+											</li>
+											<li>
+												<i class="es-icon es-icon-chevronright"></i> 了解EduSoho直播教室的基本功能
+											</li>
+											<li>
+												<i class="es-icon es-icon-chevronright"></i> 体验直播教室
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<!--选项卡切换 结束-->
+					</div>
+					<div class="col-lg-3 col-md-4  course-sidebar">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title"> <i class="es-icon es-icon-assignmentind"></i>
       授课教师
     </h3>
-  </div>
-  <div class="panel-body">
-                  <div class="media media-default">
-          <div class="media-left">
-              <a class=" js-user-card" href="#" data-card-url="/user/2487/card/show" data-user-id="2487">
-                  <img class="avatar-md" src="files/default/2015/08-31/0910080084cc142484.jpg">
+							</div>
+							<div class="panel-body">
+								<div class="media media-default">
+									<div class="media-left">
+										<a class=" js-user-card" href="#" data-card-url="/user/2487/card/show" data-user-id="2487">
+											<img class="avatar-md" src="files/default/2015/08-31/0910080084cc142484.jpg">
 
-  </a>
-  
-          </div>
-          <div class="media-body">
-            <div class="title">
-                  <a class="link-dark link-light" href="javascript:;">格洛咪</a>
-  
-            </div>
-            <div class="content">EduSoho官方运营</div>
-          </div>
-        </div>
-            </div>
-</div>
+										</a>
 
-        
-                  
-<div class="panel panel-default">
-  <div class="panel-heading">
-        <h3 class="panel-title">
+									</div>
+									<div class="media-body">
+										<div class="title">
+											<a class="link-dark link-light" href="javascript:;">格洛咪</a>
+
+										</div>
+										<div class="content">EduSoho官方运营</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">
       <i class="es-icon es-icon-personadd"></i>
       最新学员
     </h3>
-  </div>
-  <div class="panel-body">
-          <ul class="user-avatar-list clearfix">
-                          <li>
-              <a class="js-user-card" href="#" data-card-url="/user/20045/card/show" data-user-id="20045">
-                  <img class="avatar-sm" src="files/default/2016/11-05/154549dc41d0735569.jpg">
+							</div>
+							<div class="panel-body">
+								<ul class="user-avatar-list clearfix">
+									<li>
+										<a class="js-user-card" href="#" data-card-url="/user/20045/card/show" data-user-id="20045">
+											<img class="avatar-sm" src="files/default/2016/11-05/154549dc41d0735569.jpg">
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class="js-user-card" href="#" data-card-url="/user/20023/card/show" data-user-id="20023">
-                  <img class="avatar-sm" src="files/default/2016/11-04/102353920640851851.jpg">
+										</a>
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/20003/card/show" data-user-id="20003">
-                  <img class="avatar-sm" src="files/user/2016/11-03/14314731b3e8046923.jpg">
+									</li>
+									<li>
+										<a class="js-user-card" href="#" data-card-url="/user/20023/card/show" data-user-id="20023">
+											<img class="avatar-sm" src="files/default/2016/11-04/102353920640851851.jpg">
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/18983/card/show" data-user-id="18983">
-                  <img class="avatar-sm" src="files/default/2016/08-26/191211b21a52901350.jpg">
-</a>
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19989/card/show" data-user-id="19989">
-                  <img class="avatar-sm" src="files/user/2016/11-02/164205d74b33481914.jpg">
-  </a>
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/10201/card/show" data-user-id="10201">
-                  <img class="avatar-sm" src="files/user/2015/02-27/1536215f1d5f592895.jpg">
+										</a>
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19967/card/show" data-user-id="19967">
-                  <img class="avatar-sm" src="files/default/2016/11-01/161334ed6441212630.jpg">
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/20003/card/show" data-user-id="20003">
+											<img class="avatar-sm" src="files/user/2016/11-03/14314731b3e8046923.jpg">
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19580/card/show" data-user-id="19580">
-                  <img class="avatar-sm" src="files/user/2016/10-10/093506a4454f078141.png">
+										</a>
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19901/card/show" data-user-id="19901">
-                  <img class="avatar-sm" src="assets/img/default/avatar.png">
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/18983/card/show" data-user-id="18983">
+											<img class="avatar-sm" src="files/default/2016/08-26/191211b21a52901350.jpg">
+										</a>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19989/card/show" data-user-id="19989">
+											<img class="avatar-sm" src="files/user/2016/11-02/164205d74b33481914.jpg">
+										</a>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/10201/card/show" data-user-id="10201">
+											<img class="avatar-sm" src="files/user/2015/02-27/1536215f1d5f592895.jpg">
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19899/card/show" data-user-id="19899">
-                  <img class="avatar-sm" src="files/user/2016/10-28/194116c17d4c969516.jpg">
-  </a>
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19865/card/show" data-user-id="19865">
-                  <img class="avatar-sm" src="files/user/2016/10-27/1240055c21e5210127.jpg">
-</a>
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19858/card/show" data-user-id="19858">
-                  <img class="avatar-sm" src="files/user/2016/10-26/220010a5ce38590813.jpg">
+										</a>
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19857/card/show" data-user-id="19857">
-                  <img class="avatar-sm" src="files/user/2016/10-26/2142008cd116494724.jpg">
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19967/card/show" data-user-id="19967">
+											<img class="avatar-sm" src="files/default/2016/11-01/161334ed6441212630.jpg">
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19851/card/show" data-user-id="19851">
-                  <img class="avatar-sm" src="files/default/2016/10-26/16322594d9b9700458.jpg">
+										</a>
 
-  </a>
-  
-          </li>
-                          <li>
-              <a class=" js-user-card" href="javascript:;" data-card-url="/user/19602/card/show" data-user-id="19602">
-                  <img class="avatar-sm" src="files/user/2016/10-11/105733dbb33c827705.png">
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19580/card/show" data-user-id="19580">
+											<img class="avatar-sm" src="files/user/2016/10-10/093506a4454f078141.png">
 
-  </a>
-  
-          </li>
-              </ul>
-      </div>
-</div>
+										</a>
 
-                
-                  
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19901/card/show" data-user-id="19901">
+											<img class="avatar-sm" src="assets/img/default/avatar.png">
 
+										</a>
 
-<div class="panel panel-default student-dynamic">
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19899/card/show" data-user-id="19899">
+											<img class="avatar-sm" src="files/user/2016/10-28/194116c17d4c969516.jpg">
+										</a>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19865/card/show" data-user-id="19865">
+											<img class="avatar-sm" src="files/user/2016/10-27/1240055c21e5210127.jpg">
+										</a>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19858/card/show" data-user-id="19858">
+											<img class="avatar-sm" src="files/user/2016/10-26/220010a5ce38590813.jpg">
 
-  <div class="panel-heading">
-    <h3 class="panel-title"><i class="es-icon es-icon-recentactors"></i>学员动态</h3>
-  </div>
+										</a>
 
-  <div class="panel-body">
-  
-                        <div class="media media-number-o color-gray text-overflow">
-                <a class="link-dark " href="javascript:;">DavidCao</a>
-  
-            
-  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">移动端内容管理</a>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19857/card/show" data-user-id="19857">
+											<img class="avatar-sm" src="files/user/2016/10-26/2142008cd116494724.jpg">
 
-          </div>
-                                 <div class="media media-number-o color-gray text-overflow">
-                <a class="link-dark " href="javascript:;">DavidCao</a>
-  
-            
-  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">资讯管理</a>
+										</a>
 
-          </div>
-                                 <div class="media media-number-o color-gray text-overflow">
-                <a class="link-dark " href="javascript:;">DavidCao</a>
-  
-            
-			加入课程 <a class="link-dark" href="/course/427" title="来自《运营管理》">运营管理</a>
-	  
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19851/card/show" data-user-id="19851">
+											<img class="avatar-sm" src="files/default/2016/10-26/16322594d9b9700458.jpg">
 
-          </div>
-                                 <div class="media media-number-o color-gray text-overflow">
-                <a class="link-dark " href="javascript:;">bustic</a>
-  学完了课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">学习卡管理</a>
-          </div>
-                                 <div class="media media-number-o color-gray text-overflow">
-                <a class="link-dark " href="javascript:;">温皇</a>
-  开始学习课时 <a class="link-dark" href="/course/427" title="来自《运营管理》">小组管理</a>
+										</a>
 
-          </div>
-               
-      </div>
+									</li>
+									<li>
+										<a class=" js-user-card" href="javascript:;" data-card-url="/user/19602/card/show" data-user-id="19602">
+											<img class="avatar-sm" src="files/user/2016/10-11/105733dbb33c827705.png">
 
-</div>
-          </div>
-  </div>
-      </div>
+										</a>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="panel panel-default student-dynamic">
+
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="es-icon es-icon-recentactors"></i>学员动态</h3>
+							</div>
+
+							<div class="panel-body">
+
+								<div class="media media-number-o color-gray text-overflow">
+									<a class="link-dark " href="javascript:;">DavidCao</a>
+
+									开始学习课时
+									<a class="link-dark" href="/course/427" title="来自《运营管理》">移动端内容管理</a>
+
+								</div>
+								<div class="media media-number-o color-gray text-overflow">
+									<a class="link-dark " href="javascript:;">DavidCao</a>
+
+									开始学习课时
+									<a class="link-dark" href="/course/427" title="来自《运营管理》">资讯管理</a>
+
+								</div>
+								<div class="media media-number-o color-gray text-overflow">
+									<a class="link-dark " href="javascript:;">DavidCao</a>
+
+									加入课程
+									<a class="link-dark" href="/course/427" title="来自《运营管理》">运营管理</a>
+
+								</div>
+								<div class="media media-number-o color-gray text-overflow">
+									<a class="link-dark " href="javascript:;">bustic</a>
+									学完了课时
+									<a class="link-dark" href="/course/427" title="来自《运营管理》">学习卡管理</a>
+								</div>
+								<div class="media media-number-o color-gray text-overflow">
+									<a class="link-dark " href="javascript:;">温皇</a>
+									开始学习课时
+									<a class="link-dark" href="/course/427" title="来自《运营管理》">小组管理</a>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="es-footer-link">
 				<div class="container">
 					<div class="row">
@@ -737,13 +842,13 @@
 		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function () {
+			$(function() {
 				// 选项卡切换
-				$(".nav-tabs > li").on('click', function (e) {
+				$(".nav-tabs > li").on('click', function(e) {
 					// 去除active属性
 					var _this = this;
 					var id = _this.id;
-					
+
 					$(_this).addClass('active').siblings().removeClass('active');
 					$("#list-tab, #discuss-tab, #overview-tab").hide();
 					$("#" + id + '-tab').show();
