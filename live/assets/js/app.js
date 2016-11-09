@@ -59,6 +59,11 @@ $(function() {
 		$("body").on(eventtype, '.html-mask.active', function(e) {
 			removeNavMobile();
 		});
+		
+		// 返回顶部
+		$('#go-top .go').on('click',function(){
+			$('html,body').animate({'scrollTop':0},500);
+		});
 	}
 
 	// 判断是否是移动设备

@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>直播 - 电教馆网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By 电教馆</title>
+		<meta name="keywords" content="电教馆网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="电教馆是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。电教馆提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，电教馆也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。电教馆产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，电教馆具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。电教馆开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libs/swiper/2.7.6/idangerous.swiper.css" />
+
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="themes/graceful/graceful.css"/>
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/web.css"/>
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/member.css"/>
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+    <style type="text/css">
+			@font-face {
+				font-family: "es-icon";
+				src: url('assets/v2/fonts/es-icon.eot');
+				/* IE9*/
+				src: url('assets/v2/fonts/es-icon.eot?t=1459854189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('assets/v2/fonts/es-icon.woff?t=1459854189') format('woff'), /* chrome, firefox */
+				url('assets/v2/fonts/es-icon.ttf?t=1459854189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+				url('assets/v2/fonts/es-icon.svg?t=1459854189#es-icon') format('svg');
+				/* iOS 4.1- */
+			}
+		</style>
+  <![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="es-wrap">
+
+			<header class="es-header navbar">
+				<div class="navbar-header">
+					<div class="visible-xs  navbar-mobile">
+						<a href="javascript:;" class="navbar-more js-navbar-more">
+							<i class="es-icon es-icon-menu"></i>
+						</a>
+						<div class="html-mask"></div>
+						<div class="nav-mobile">
+							<form class="navbar-form" action="search" method="get">
+								<div class="form-group">
+									<input class="form-control" placeholder="搜索" name="q">
+									<button class="button es-icon es-icon-search"></button>
+								</div>
+							</form>
+							<ul class="nav navbar-nav">
+
+								<li class="">
+									<a href="live.html">首页 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="#">课程 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">公开课</a>
+										</li>
+										<li>
+											<a href="javascript:;">课程功能</a>
+										</li>
+										<li>
+											<a href="javascript:;">系统管理</a>
+										</li>
+										<li>
+											<a href="javascript:;">官方应用</a>
+										</li>
+										<li>
+											<a href="javascript:;">班级中心</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="">
+									<a href="courselist.html">直播学堂</a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="/" class="navbar-brand">
+						<img src="files/system/2016/08-26/154339b63acd679602.png">
+					</a>
+				</div>
+				<nav class="collapse navbar-collapse">
+					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+						<li class="">
+							<a href="live.html">首页 </a>
+						</li>
+
+						<li class="nav-hover">
+							<a href="#">课程 <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="javascript:;">公开课</a>
+								</li>
+								<li>
+									<a href="javascript:;">课程功能</a>
+								</li>
+								<li>
+									<a href="javascript:;">系统管理</a>
+								</li>
+								<li>
+									<a href="javascript:;">官方应用</a>
+								</li>
+								<li>
+									<a href="javascript:;">班级中心</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="">
+							<a href="courselist.html">直播学堂</a>
+						</li>
+
+						<li class="nav-more nav-hover">
+							<a class="more">其他
+								<!--<i class="es-icon es-icon-morehoriz"></i>-->
+							</a>
+							<ul class="dropdown-menu" role="menu">
+
+								<li class="">
+									<a href="#">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="javascript:;">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+					<div class="navbar-user  left ">
+						<ul class="nav user-nav">
+							<li class="user-avatar-li nav-hover visible-xs">
+								<a href="javascript:;" class="dropdown-toggle">
+									<img class="avatar-xs" src="assets/img/default/avatar.png">
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="login.html">登录</a>
+									</li>
+									<li>
+										<a href="register.html">注册</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hidden-xs">
+								<a href="login.html">登录</a>
+							</li>
+							<li class="hidden-xs">
+								<a href="register.html">注册</a>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+							<div class="form-group">
+								<input class="form-control js-search" name="q" placeholder="搜索">
+								<button class="button es-icon es-icon-search"></button>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</header>
+
+			<div id="main" class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="alert alert-warning alert-dismissible" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+
+							<!--p class="hint one">【温馨提示】:嘉兴市教育学院安排魏林明老师演讲备战中考公益视频，视频观看时间:2016年3月16日8点后可观看。请家长、同学们共同重点关注。</p-->
+							<p class="hint" style="display:none;">
+								<font color="red">【提示】各位同学，如果在上课期间出现不能观看课程或视频卡顿现象，请在右上角的网络管理里面手动选择自己家中使用的网络运行商。避免一些电脑安全软件阻止客户端的运行，建议上课前把电脑安全软件先退出。</font>
+							</p>
+							<p class="hint" style="display:none;">【提示】资料领取方式：1.自取 (7月4号--10号领取) 地址：嘉兴市南湖区紫阳街道191号高家洋房。2.邮寄 (邮费自付) 在个人设置里标明地址、联系电话、收款人的姓名。
+								<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;资料有限，先付款先得。如有不懂请联系我们客服人员！</p>
+							<p class="hint" style="display:none;">【提示】各位同学，凡是春季班购买过3门课程的在后期暑假班课程里可获得20元抵用券，购买过4门课程的可获得40元抵用券。该抵用券仅限2016年暑期班使用。</p>
+							<p class="hint">【客户端】智慧课堂使用客户端软件上课，请同学们上课之前务必安装好客户端软件，如安装过程遇到问题，请查看新手指南和常见问题。
+								<a href="/about.php?info_id=6" class="btn btn-warning" target="_blank">下载地址</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- main -->
+					<div class="main col-md-8">
+						<!-- banner-->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- 轮播（Carousel）指标 -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+
+							</ol>
+							<!-- 轮播（Carousel）项目 -->
+							<div class="carousel-inner" style="height:336px;">
+								<div class="item active left">
+									<a href="html/newversion.shtml" target="_blank"><img src="images/1.jpg"></a>
+									<div class="carousel-caption"></div>
+								</div>
+								<div class="item next left">
+									<a href="vod.php" target="_blank"><img src="images/2.jpg"></a>
+									<div class="carousel-caption"></div>
+								</div>
+
+								<div class="item">
+									<a href="vod.php?mod=pilot_video&amp;url=9" target="_blank"><img src="images/4.jpg"></a>
+									<div class="carousel-caption"></div>
+								</div>
+							</div>
+							<!-- 轮播（Carousel）导航 -->
+							<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="background:none"><span class="iconfont icon-circle-arrow-left"></span></a>
+							<a class="carousel-control right" href="#myCarousel" data-slide="next" style="background:none"><span class="iconfont icon-jiantou"></span></a>
+						</div>
+
+						<!-- course -->
+						<div class="es-box es-course">
+							<h2>课程</h2>
+							<ul class="row">
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/09/20160909_043651_gaFB.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班九年级科学</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥230.00</span>
+												<span class="student-num">24211人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=165"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=165">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班九年级科学</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/09/20160909_040303_Up68.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班八年级英语</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥125.00</span>
+												<span class="student-num">24219人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=169"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=169">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班八年级英语</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/09/20160909_041739_g1YO.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班七年级数学</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥195.00</span>
+												<span class="student-num">24226人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=172"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=172">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班七年级数学</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/12/20160912_044501_owap.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班九年级组合课程</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥660.00</span>
+												<span class="student-num">24233人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=177"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=177">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班九年级组合课程</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/12/20160912_044839_oQ6D.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班八年级组合课程</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥570.00</span>
+												<span class="student-num">24239人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=178"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=178">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班八年级组合课程</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-sm-6 col-md-4 es-course-list">
+									<div>
+										<div class="course-top">
+											<img src="data/schoolimg/thumbnails/201609/12/20160912_045023_L1zu.jpg" class="" width="220px;" height="138px;" onerror="this.src='/static/images/title_page_220_165.jpg'">
+										</div>
+										<div class="course-bottom">
+											<h3>2016秋季班七年级组合课程</h3>
+											<p class="metas clearfix">
+												<span class="price-num">¥550.00</span>
+												<span class="student-num">24246人报名</span>
+											</p>
+											<span class="nickname">
+                 <a class="text-muted" href="vod.php?mod=manage&amp;do=show&amp;sid=179"></a>
+              </span>
+										</div>
+										<div class="mask">
+											<a href="vod.php?mod=manage&amp;do=show&amp;sid=179">
+												<div class="teacher-info clearfix">
+													<span></span>
+													<span></span>
+												</div>
+												<p></p>
+												<span class="iconfont icon-jiantou"></span>
+												<h3 class="title">2016秋季班七年级组合课程</h3>
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a class="more" href="vod.php">更多&gt;</a>
+						</div>
+
+						<!-- 课程讨论 -->
+						<!--  teacher -->
+						<div class="es-box teachers">
+							<h2>名师团</h2>
+							<ul class="row">
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=115619"><img class="img-circle" src="data/schoolimg/thumbnails/201609/17/20160917_093843_rwlg.jpg" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=115619">张令</a></span>
+										<i> 嘉兴市</i>
+										<p> 市学科带头人</p>
+									</div>
+								</li>
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=94445"><img class="img-circle" src="data/schoolimg/thumbnails/201609/13/20160913_103916_tt2R.jpg" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=94445">周福兰</a></span>
+										<i> 嘉兴市</i>
+										<p> 高级教师</p>
+									</div>
+								</li>
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=84884"><img class="img-circle" src="data/schoolimg/thumbnails/201609/13/20160913_021643_ET92.jpg" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=84884">赵  亮</a></span>
+										<i> 嘉兴市</i>
+										<p> 高级教师</p>
+									</div>
+								</li>
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=85124"><img class="img-circle" src="data/schoolimg/thumbnails/201507/07/20150707_020018_vD20.png" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=85124">汤衎 </a></span>
+										<i> 嘉兴市</i>
+										<p> 海盐县博才实验学校高级教师，副校长 ...</p>
+									</div>
+								</li>
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=84895"><img class="img-circle" src="data/schoolimg/thumbnails/201609/13/20160913_105958_RUVA.jpg" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=84895">徐向阳</a></span>
+										<i> 嘉兴市</i>
+										<p> 市骨干教师</p>
+									</div>
+								</li>
+
+								<li class="col-sm-6 col-md-4">
+									<div class="teachers-item">
+										<a href="user.php?mod=teacher&amp;uid=84887"><img class="img-circle" src="data/schoolimg/thumbnails/201609/17/20160917_094805_T8me.jpg" onerror="this.src='/images/avatar_t.png'"></a>
+										<span><a href="user.php?mod=teacher&amp;uid=84887">徐建利</a></span>
+										<i> 嘉兴市</i>
+										<p> 嘉兴市语文学科带头人</p>
+									</div>
+								</li>
+
+							</ul>
+							<a class="more" href="/teacher.php">更多&gt;</a>
+						</div>
+						<div class="es-box news">
+							<h2>最新资讯</h2>
+							<ul class="row">
+								<li class="col-md-6">
+									<em>11-08 08:42 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=802">专家呼吁：数字时代高校图书馆发展需要创新服务</a>
+								</li>
+								<li class="col-md-6">
+									<em>11-08 08:41 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=801">诺丁斯：关心是教育的另一种模式</a>
+								</li>
+								<li class="col-md-6">
+									<em>11-07 08:58 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=800">教育部：坚定不移推进教育系统全面从严治党</a>
+								</li>
+								<li class="col-md-6">
+									<em>11-07 08:57 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=799">机会永远不会向年轻人关上大门</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-24 08:59 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=798">“走好我们这一代人的长征路”</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-24 08:58 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=797">新华社评论员：弘扬长征精神，激发奋进力量</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-19 09:38 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=796">读经典好书要趁青春好时光</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-19 08:31 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=795">杭高一位教师因病去世，留下一段感人师生情</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-18 08:50 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=794">美国幼儿阅读习惯是这样炼成的</a>
+								</li>
+								<li class="col-md-6">
+									<em>10-18 08:47 </em>
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=793">“名校”未必有真经</a>
+								</li>
+							</ul>
+							<a class="more" href="/news.php">更多&gt;</a>
+						</div>
+
+					</div>
+
+					<!-- aside -->
+					<div class="col-md-4">
+						<div class="help-side" style="padding-bottom:10px;margin-bottom:5px;background-color:#ececec;width:362px">
+							<div class="btn_list">
+								<a href="vod.php?mod=pilot_video&amp;url=1" class="btn btn-info">视频介绍</a>
+								<a href="help.php?info_cateid=1001&amp;info_id=8" class="btn btn-danger">新手指南</a>
+								<a href="help.php?info_cateid=1002&amp;info_id=35" class="btn btn-warning">常见问题</a>
+							</div>
+
+						</div>
+						<div class="es-box news-side" style="padding-bottom:10px;">
+							<h2>网校公告 <a href="announcement.php?mod=index&amp;do=index" class="more">更多&gt;</a></h2>
+							<ul>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=112" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 关于一中实验学校2016秋季班视频收看的温馨提示 </a>
+									<span class="pull-right">16-11-06 </span>
+								</li>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=111" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 本星期六11.5现场听课授课名单，请学生家长多多关注 </a>
+									<span class="pull-right">16-11-03 </span>
+								</li>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=110" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 本星期六10.29现场听课授课名单，请学生家长多多关注 </a>
+									<span class="pull-right">16-10-28 </span>
+								</li>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=109" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 本星期六10.22现场听课授课名单，请学生家长多多关注 </a>
+									<span class="pull-right">16-10-20 </span>
+								</li>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=108" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 本星期六现场听课授课名单，请学生家长多多关注 </a>
+									<span class="pull-right">16-10-14 </span>
+								</li>
+								<li>
+									<a href="announcement.php?mod=index&amp;do=show&amp;aid=103" style="width: 220px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;float: left;"> 嘉兴智慧教育在线课堂“英语学科”特色介绍 </a>
+									<span class="pull-right">16-09-21 </span>
+								</li>
+							</ul>
+						</div>
+						<div class="es-box status-side">
+							<h2>公益视频</h2>
+							<ul>
+								<li>
+									<a href="vod.php?mod=pilot_video&amp;url=9">备战中考公益视频讲座</a>
+								</li>
+							</ul>
+						</div>
+						<div class="es-box news-side" style="padding-bottom:10px;">
+							<h2>试听课程</h2>
+							<ul>
+								<li style="font-size:18px;color:black;">巩固班</li>
+								<li>
+									<a href="vod.php?mod=pilot_video&amp;url=3">七年级数学</a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="vod.php?mod=pilot_video&amp;url=4">八年级英语</a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="vod.php?mod=pilot_video&amp;url=5">九年级语文</a>
+								</li>
+								<li style="font-size:18px;color:black;">点播</li>
+								<li>
+									<a href="vod.php?mod=pilot_video&amp;url=6">七年级语文</a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="vod.php?mod=pilot_video&amp;url=7">八年级英语</a>&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="vod.php?mod=pilot_video&amp;url=8">九年级数学</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="es-box status-side">
+							<h2>TA们已报名</h2>
+							<div class="baomi">
+								<ul class="media-list" style="margin-top: 0px;">
+
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">刘同学</a>
+											报名参加了《2016年秋季班七年级语文》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">章同学</a>
+											报名参加了《2016年秋季班九年级语文》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">章同学</a>
+											报名参加了《2016年秋季班九年级数学》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">章同学</a>
+											报名参加了《2016年秋季班九年级英语》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">章同学</a>
+											报名参加了《2016年秋季班九年级科学》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">王同学</a>
+											报名参加了《2016年秋季班九年级语文》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">王同学</a>
+											报名参加了《2016年秋季班九年级数学》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">刘同学</a>
+											报名参加了《2016年秋季班七年级科学》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">刘同学</a>
+											报名参加了《2016年秋季班七年级英语》
+										</div>
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#"><img class="img-circle media-object" src="images/avatar.png"></a>
+										<div class="media-body">
+											<a href="#">刘同学</a>
+											报名参加了《2016年秋季班七年级数学》
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="es-box news">
+							<h2>推荐课程</h2>
+							<ul class="row">
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">1</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=159">2016秋季班九年级语文</a>
+												</td>
+												<td style="color:red;text-align:right;">120.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">2</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=160">2016秋季班九年级数学</a>
+												</td>
+												<td style="color:red;text-align:right;">180.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">3</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=161">2016秋季班九年级英语</a>
+												</td>
+												<td style="color:red;text-align:right;">130.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">4</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=165">2016秋季班九年级科学</a>
+												</td>
+												<td style="color:red;text-align:right;">230.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">5</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=166">2016秋季班八年级语文</a>
+												</td>
+												<td style="color:red;text-align:right;">80.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">6</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=167">2016秋季班八年级数学</a>
+												</td>
+												<td style="color:red;text-align:right;">170.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">7</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=168">2016秋季班八年级科学</a>
+												</td>
+												<td style="color:red;text-align:right;">195.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">8</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=169">2016秋季班八年级英语</a>
+												</td>
+												<td style="color:red;text-align:right;">125.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">9</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=171">2016秋季班七年级语文</a>
+												</td>
+												<td style="color:red;text-align:right;">80.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li class="">
+									<table style="width: 100%">
+										<tbody>
+											<tr>
+												<td style="color:red;float:left;font-size:1.2em;width:20px;">10</td>
+												<td>
+													<a href="vod.php?mod=manage&amp;do=show&amp;sid=172">2016秋季班七年级数学</a>
+												</td>
+												<td style="color:red;text-align:right;">195.00元</td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+							</ul>
+							<a class="more" href="/vod.php">更多&gt;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="go-top" id="go-top" style="display: block;">
+			    <a href="javascript:;" class="go"></a>
+			</div>
+			
+			<div class="es-footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 footer-logo hidden-sm hidden-xs">
+							<a class="" href="http://www.电教馆.com" target="_blank"><img src="assets/v2/img/bottom_logo.png" alt="建议图片大小为233*64"></a>
+							<div class="footer-sns">
+								<a href="javascript:;" target="_blank"><i class="es-icon es-icon-weibo"></i></a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-weixin"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/weixin.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-apple"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/apple.png" alt="">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-android"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/android.png" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-8 footer-main clearfix">
+							<div class="link-item ">
+								<h3>我是学生</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">如何注册</a>
+									</li>
+									<li>
+										<a href="javascript:;">如何学习</a>
+									</li>
+									<li>
+										<a href="javascript:;">如何互动</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是老师</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">发布课程</a>
+									</li>
+									<li>
+										<a href="javascript:;">使用题库</a>
+									</li>
+									<li>
+										<a href="javascript:;">教学资料库</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是管理员</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">系统设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">课程设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">用户管理</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item hidden-xs">
+								<h3>关于我们</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">电教馆官网</a>
+									</li>
+									<li>
+										<a href="javascript:;">官方微博</a>
+									</li>
+									<li>
+										<a href="javascript:;">加入我们</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<footer class="es-footer">
+				<div class="copyright">
+					<div class="container">
+						由
+						<a href="http://www.chinaschooling.com.cn/">上学啦网络信息技术有限公司</a>提供技术支持
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- 侧边栏快捷操作  -->
+		<div class="es-bar hidden-xs">
+
+			<!-- 左侧列表 -->
+			<div class="es-bar-menu">
+				<ul class="bar-menu-top">
+					<li data-id="#bar-user-center" class="bar-user">
+						<a href="javascript:;" data-url="/esbar/my/study_center">学<br>习<br>中<br>心</a>
+					</li>
+					<li data-id="#bar-homework" data-toggle="tooltip" data-placement="left" title="我的考试/作业">
+						<a href="javascript:;" data-url="/esbar/my/practice/reviewing"><i class="es-icon es-icon-edit"></i></a>
+					</li>
+					<li data-id="#bar-course-list" data-placement="left" data-toggle="tooltip" title="我的课程/班级">
+						<a data-url="/esbar/my/course" href="javascript:;">
+							<i class="es-icon es-icon-book">
+    </i>
+						</a>
+					</li>
+					<li data-id="#bar-message" data-toggle="tooltip" data-placement="left" title="通知">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-notifications"></i>
+						</a>
+					</li>
+				</ul>
+				<ul class="bar-menu-sns">
+					<li class="popover-btn bar-qq-btn" data-container=".bar-qq-btn" data-title="QQ客服及QQ群" data-content-element="#bar-qq-content">
+						<a><i class="es-icon es-icon-qq"></i></a>
+					</li>
+					<li class="popover-btn bar-phone-btn" data-container=".bar-phone-btn" data-title="电话客服" data-content-element="#bar-phone-content">
+						<a><i class="es-icon es-icon-phone"></i></a>
+					</li>
+					<li class="popover-btn bar-weixin-btn" data-container=".bar-weixin-btn" data-content-element="#bar-weixin-content">
+						<a><i class="es-icon es-icon-weixin"></i></a>
+					</li>
+
+					<li data-toggle="tooltip" data-placement="left" title="手机端">
+						<a href="/mobile/" target="_blank"><i class="es-icon es-icon-phone1"></i></a>
+					</li>
+					<li class="go-top" style="margin:-10px auto 0 auto;" data-toggle="tooltip" data-placement="left" title="回到顶端">
+						<a href="javascript:;">
+							<i class="es-icon es-icon-keyboardarrowup" style="margin-bottom:-8px"></i>
+							<span class="text-sm">TOP</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+		<div id="modal" class="modal"></div>
+		<div id="attachment-modal" class="modal"></div>
+
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/swiper/2.7.6/idangerous.swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	        function autoScroll(obj) {
+	            $(obj).find("ul").animate({
+	                marginTop: "-80px"
+	            }, 500, function() {
+	                $(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
+	            })
+	        }
+	        $(function() {
+	            setInterval('autoScroll(".baomi")', 2000);
+	        })
+	    </script>
+	</body>
+
+	</html>
