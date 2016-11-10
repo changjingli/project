@@ -21,8 +21,13 @@
 		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
 		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
 		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
-		
+		<link rel="stylesheet" type="text/css" href="assets/libs/swiper/2.7.6/idangerous.swiper.css" />
+
 		<link href="assets/v2/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="themes/graceful/graceful.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/member.css" />
+
+		<link rel="stylesheet" type="text/css" href="assets/v2/css/libs.css" />
 
 		<!--[if lt IE 9]>
     <script src="assets/libs/html5shiv.js"></script>
@@ -40,289 +45,382 @@
 			}
 		</style>
   <![endif]-->
-  <style type="text/css">
-  	.w12p {
-  		width: 12% !important;
-  	}
-  	.w20p {
-  		width: 20% !important;
-  	}
-  	.w35p {
-  		width: 35% !important;
-  	}
-  	/*-------------------------*/
-	.es-header {
-		line-height: 60px;
-	}
-	.live-back {
-		font-size: 2rem;
-		color: #fff;
-		cursor: pointer;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-	}
-	.course-item-list-in-toolbar-pane {
-		top: 40px;
-		/*overflow-y: visible;*/
-		background: #404040;
-	}
-	.lesson-dashboard {
-		top: 60px;
-	}
-	.lesson-dashboard .dashboard-body {
-		top: 0;
-	}
-	.title-group {
-		background-color: transparent !important;
-		box-sizing: content-box;
-	}
-	.lesson-dashboard .toolbar-pane-container {
-		right: 0;
-	}
-	.period-list .period {
-		padding: 10px 15px;
-	}
-	.period-list .period > a, .period-list .period .title {
-		color: #fff;
-	}
-	.period-list .item-active > a, .period-list .item-active .title {
-		color: #1cb177;
-	}
-	.period-list .period:hover, .period-list .period.item-active {
-		background-color: inherit;
-	}
-	
-	/*选项卡*/
-	.nav.nav-tabs {
-		margin: 0 auto;
-		border-bottom: 2px solid #5e5e5e;
-		background: #404040;
-		height: 40px;
-		line-height: 40px;
-		padding: 0 7%;
-	}
-	#nav-tab-icon {
-		background: #000;
-		border: 0;
-		line-height: 35px;
-	}
-	#nav-tab-icon > li {
-		height: 35px;
-	}
-	
-	.nav.nav-tabs > li {
-		font-size: 16px;
-		height: 40px;
-		color: #fff;
-		width: 33.33%;
-		cursor: pointer;
-	}
-	.nav-tabs > .active {
-		color: #1cb177 !important;
-	}
-	.nav.nav-tabs > li:hover {
-		color: #1cb177 !important;
-	}
-	/*选项卡结束*/
-	.options {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
-	
-	.form-group {
-		margin: 15px 0;
-	}
-	#menu-tab {
-		padding-bottom: 85px;
-	}
-	/*用户选项区*/
-	.inputs input, .inputs button {
-		height: 40px;
-		border: 0;
-		outline: 0;
-	}
-	.inputs input {
-		padding: .5em 1em;
-		width: 80%;
-	}
-	.inputs button {
-		width: 20%;
-		color: #fff;
-		background-color: #0095da;
-		letter-spacing: 3px;
-	}
-	.zan {
-		margin-top: -20px;
-	}
-	#zan:hover .zan {
-		transform: rotate(-20deg);
-		transform-origin: left;
-	}
-	/*表情*/
-	.emoji {
-		display: none;
-		position: relative;
-		padding: 15px 0;
-		background-color: #fff;
-		margin-bottom: 14px;
-		border: 1px solid #5e5e5e;
-		z-index: 99;
-	}
-	
-	.emoji:before {
-		position: absolute;
-		left: 49%;
-		bottom: -15px;
-		width: 30px;
-		height: 30px;
-		background: inherit;
-		transform: rotate(45deg);
-		z-index: 9;
-		content: '';
-	}
-	
-	.emoji ul, .chats {
-		margin: 0;
-		padding: 0;
-		overflow: auto;
-		list-style: none;
-	}
-	.chats {
-		height: 100%;
-	}
-	.chats .thumb {
-		width: 50%;
-	}
-	.chats li {
-		color: #fff;
-		padding-left: 5px;
-	}
-	.chats .author {
-		margin-right: 5px;
-		color: rgb(51, 204, 0);
-	}
-	.chats .content {
-		padding-left: 10px;
-	}
-	.emoji ul li {
-		float: left;
-		width: 16.66%;
-		text-align: center;
-		cursor: pointer;
-	}
-	.emoji ul li img {
-		width: 80%;
-		max-width: 100%;
-	}
-  </style>
+		<style type="text/css">
+			.w12p {
+				width: 12% !important;
+			}
+			
+			.w20p {
+				width: 20% !important;
+			}
+			
+			.w35p {
+				width: 35% !important;
+			}
+			/*-------------------------*/
+			
+			.es-header {
+				line-height: 60px;
+			}
+			
+			.live-back {
+				font-size: 2rem;
+				color: #fff;
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+			}
+			
+			.course-item-list-in-toolbar-pane {
+				top: 80px;
+				/*overflow-y: visible;*/
+				background: #404040;
+			}
+			
+			.lesson-dashboard {
+				top: 176px;
+			}
+			
+			.lesson-dashboard .dashboard-body {
+				top: 0;
+			}
+			
+			.title-group {
+				background-color: transparent !important;
+				box-sizing: content-box;
+			}
+			
+			.lesson-dashboard .toolbar-pane-container {
+				right: 0;
+			}
+			
+			.period-list .period {
+				padding: 10px 15px;
+			}
+			
+			.period-list .period> a,
+			.period-list .period .title {
+				color: #fff;
+			}
+			
+			.period-list .item-active> a,
+			.period-list .item-active .title {
+				color: #1cb177;
+			}
+			
+			.period-list .period:hover,
+			.period-list .period.item-active {
+				background-color: inherit;
+			}
+			/*选项卡*/
+			
+			.nav.nav-tabs {
+				margin: 0 auto;
+				border-bottom: 2px solid #5e5e5e;
+				background: #404040;
+				height: 80px;
+				line-height: 40px;
+				padding: 0 7%;
+			}
+			
+			#nav-tab-icon {
+				height: 40px;
+				background: #000;
+				border: 0;
+				line-height: 35px;
+			}
+			
+			#nav-tab-icon> li {
+				height: 35px;
+			}
+			
+			.nav.nav-tabs> li {
+				font-size: 16px;
+				height: 40px;
+				color: #fff;
+				width: 33.33%;
+				cursor: pointer;
+			}
+			
+			.nav-tabs> .active {
+				color: #1cb177 !important;
+			}
+			
+			.nav.nav-tabs> li:hover {
+				color: #1cb177 !important;
+			}
+			/*选项卡结束*/
+			
+			.options {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+			
+			.form-group {
+				margin: 15px 0;
+			}
+			
+			#menu-tab {
+				padding-bottom: 85px;
+			}
+			/*用户选项区*/
+			
+			.inputs input,
+			.inputs button {
+				height: 40px;
+				border: 0;
+				outline: 0;
+			}
+			
+			.inputs input {
+				padding: .5em 1em;
+				width: 80%;
+			}
+			
+			.inputs button {
+				width: 20%;
+				color: #fff;
+				background-color: #0095da;
+				letter-spacing: 3px;
+			}
+			
+			.zan {
+				margin-top: -20px;
+			}
+			
+			#zan:hover .zan {
+				transform: rotate(-20deg);
+				transform-origin: left;
+			}
+			/*表情*/
+			
+			.emoji {
+				display: none;
+				position: relative;
+				padding: 15px 0;
+				background-color: #fff;
+				margin-bottom: 14px;
+				border: 1px solid #5e5e5e;
+				z-index: 99;
+			}
+			
+			.emoji:before {
+				position: absolute;
+				left: 75%;
+				bottom: -15px;
+				width: 30px;
+				height: 30px;
+				background: inherit;
+				transform: rotate(45deg);
+				z-index: 9;
+				content: '';
+			}
+			
+			.emoji ul,
+			.chats {
+				margin: 0;
+				padding: 0;
+				overflow: auto;
+				list-style: none;
+			}
+			
+			.chats {
+				height: 100%;
+			}
+			
+			.chats .thumb {
+				width: 50%;
+			}
+			
+			.chats li {
+				color: #fff;
+				padding-left: 5px;
+			}
+			
+			.chats .author {
+				margin-right: 5px;
+				color: rgb(51, 204, 0);
+			}
+			
+			.chats .content {
+				padding-left: 10px;
+			}
+			
+			.emoji ul li {
+				float: left;
+				width: 16.66%;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.emoji ul li img {
+				width: 80%;
+				max-width: 100%;
+			}
+			
+			.lesson-dashboard .title-group {
+				height: auto;
+			}
+			
+			.seewho {
+				margin: 10px auto;
+			}
+			
+			.seewho label {
+				margin: 0 5px;
+			}
+			
+			.chattime {
+				margin: 10px auto;
+				width: 50%;
+				border-bottom: 2px solid #5e5e5e;
+			}
+			.chattime > span {
+				width: 50px;
+				display: block;
+				padding: 5px;
+				background: #404040;
+				margin: 0 auto -16px;
+			}
+		</style>
 
 	</head>
 
 	<body>
 
 		<div class="es-wrap">
-
+			
+			<!--顶部-->
+			<div class="es-head">
+				<img class="logo" src="assets/img/default/logo.png" />
+				<img src="assets/img/default/text-logo-shdow.png" />
+				<div class="navbar-user  left ">
+					<ul class="nav user-nav">
+						<li class="user-avatar-li nav-hover visible-xs">
+							<a href="javascript:;" class="dropdown-toggle">
+								<img class="avatar-xs" src="assets/img/default/avatar.png">
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="login.html">登录</a>
+								</li>
+								<li>
+									<a href="register.html">注册</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hidden-xs">
+							<a href="login.html">登录</a>
+						</li>
+						<li class="hidden-xs">
+							<a href="register.html">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
 			<header class="es-header navbar">
 				<div class="container">
 					<i onclick="javascript:history.back();" class="es-icon es-icon-chevronleft live-course-body live-back">返回课程</i>
 				</div>
 			</header>
-			
+
 			<div class="lesson-dashboard lesson-dashboard-open" id="lesson-dashboard" data-course-id="283" data-course-uri="/course/283" data-dashboard-uri="/course/283/learn" data-watch-limit="" data-starttime="" data-hide-media-lesson-learn-btn="" data-widget-cid="widget-0">
-    <div class="dashboard-content">
-      <div class="dashboard-body">
-        <div class="lesson-content lesson-content-text ps-container" id="lesson-live-content" data-role="lesson-content" style="">
-          <div class="lesson-content-text-body title-group">课时3 直播教室体验</div>
-          <div class="lesson-content-text-body">
-          	<video width="800" height="">
-          		<source src="myvideo.mp4" type="video/mp4"></source>
-          		<source src="myvideo.ogv" type="video/ogg"></source>
-          		<source src="myvideo.webm" type="video/webm"></source>
-          		<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+				<div class="dashboard-content">
+					<div class="dashboard-body">
+						<div class="lesson-content lesson-content-text ps-container" id="lesson-live-content" data-role="lesson-content" style="">
+							<div class="lesson-content-text-body title-group">课时3 直播教室体验</div>
+							<div class="lesson-content-text-body">
+								<video width="800" height="">
+									<source src="myvideo.mp4" type="video/mp4"></source>
+									<source src="myvideo.ogv" type="video/ogg"></source>
+									<source src="myvideo.webm" type="video/webm"></source>
+									<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
           			<param name="movie" value="myvideo.swf" />
           			<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
-          		</object>
-          		当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
-          	</video>
-          </div>
-        </div>
+          		</object> 当前浏览器不支持 video直接播放，点击这里下载视频：
+									<a href="myvideo.webm">下载视频</a>
+								</video>
+							</div>
+						</div>
 
-      </div>
-    </div>
+					</div>
+				</div>
 
-    <div class="toolbar toolbar-open" id="lesson-dashboard-toolbar" data-widget-cid="widget-1">
-      <div class="toolbar-pane-container">
-     <div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;">
-     	
-	    <div class="">
-		    <ul class="nav nav-tabs" id="nav-tab">
-		    	<li id="menu" class="tac"><i class="glyphicon glyphicon-envelope"></i></li>
-		    	<li id="ask" class="tac"><i class="glyphicon glyphicon-heart-empty"></i></li>
-		    	<li id="note" class="tac"><i class="glyphicon glyphicon-download-alt"></i></li>
-		    </ul>	
-	    </div>
-     	<div class="course-item-list-in-toolbar-pane ps-container" id="menu-tab">
-	    	<ul class="chats" id="course-item-list">
-	    		<li>
-	    			<p class="title"><span class="author">嘿嘿</span>18:24:26</p>
-	    			<p class="content">fdfdfdfd</p>
-	    		</li>
-	        </ul>
-	        <div class="options">
-	        	<!--<div class="icons">
-	        		<ul class="nav nav-tabs" id="nav-tab-icon">
-				    	<li class="tac"><i class="glyphicon glyphicon-thumbs-up"></i> (222)</li>
-				    	<li class="tac"><i class="glyphicon glyphicon-gift"></i></li>
-				    	<li class="tac"><i class="glyphicon glyphicon-th-large"></i></li>
-				    </ul>
-	        	</div>-->
-	        	<div class="emoji">
-	        		<ul>
-	        			<li><img src="files/emoji/2016/11-07/1.png" alt="表情1" /></li>
-	        			<li><img src="files/emoji/2016/11-07/2.png" alt="表情2" /></li>
-	        			<li><img src="files/emoji/2016/11-07/3.png" alt="表情3" /></li>
-	        			<li><img src="files/emoji/2016/11-07/4.png" alt="表情4" /></li>
-	        			<li><img src="files/emoji/2016/11-07/5.png" alt="表情5" /></li>
-	        			<li><img src="files/emoji/2016/11-07/6.png" alt="表情6" /></li>
-	        			<li><img src="files/emoji/2016/11-07/7.png" alt="表情7" /></li>
-	        			<li><img src="files/emoji/2016/11-07/8.png" alt="表情8" /></li>
-	        			<li><img src="files/emoji/2016/11-07/9.png" alt="表情9" /></li>
-	        			<li><img src="files/emoji/2016/11-07/10.png" alt="表情10" /></li>
-	        			<li><img src="files/emoji/2016/11-07/11.png" alt="表情11" /></li>
-	        			<li><img src="files/emoji/2016/11-07/12.png" alt="表情12" /></li>
-	        			<li><img src="files/emoji/2016/11-07/13.png" alt="表情13" /></li>
-	        			<li><img src="files/emoji/2016/11-07/14.png" alt="表情14" /></li>
-	        			<li><img src="files/emoji/2016/11-07/15.png" alt="表情15" /></li>
-	        			<li><img src="files/emoji/2016/11-07/16.png" alt="表情16" /></li>
-	        			<li><img src="files/emoji/2016/11-07/17.png" alt="表情17" /></li>
-	        			<li><img src="files/emoji/2016/11-07/18.png" alt="表情18" /></li>
-	        		</ul>
-	        	</div>
-	        	<div class="icons">
-	        		<ul class="nav nav-tabs" id="nav-tab-icon">
-	        			<li class="tac w35p" id="zan"><img class="zan" src="assets/img/default/zan.png"/> (222)</li>
-				    	<li class="tac w12p"><i class="glyphicon glyphicon-gift"></i></li>
-				    	<li id="js-emoji" class="tac w12p"><i class="glyphicon glyphicon-th"></i></li>	
-			    	
-			    		<li class="w20p"><input type="radio" name="see" id="see1" value="0" checked /><label for="see1">看全部</label></li>
-	    				<li class="w20p"><input type="radio" name="see" id="see2" value="1"/><label for="see2">看老师</label></li>
-				    </ul>
-	        	</div>
-	        	<div class="inputs">
-	        		<input id="msg" placeholder="对大家说" /><button>发送</button>
-	        	</div>
-	        </div>
-  		</div>
-    </div>
-    </div>
-    </div>
+				<div class="toolbar toolbar-open" id="lesson-dashboard-toolbar" data-widget-cid="widget-1">
+					<div class="toolbar-pane-container">
+						<div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;">
 
-  </div>
-			
+							<div class="">
+								<ul class="nav nav-tabs" id="nav-tab">
+									<li id="menu" class="tac"><i class="glyphicon glyphicon-envelope"></i></li>
+									<li id="ask" class="tac"><i class="glyphicon glyphicon-heart-empty"></i></li>
+									<li id="note" class="tac"><i class="glyphicon glyphicon-download-alt"></i></li>
+									<li id="note" class="tac"><i class="glyphicon glyphicon-picture"></i></li>
+									<li id="note" class="tac"><i class="glyphicon glyphicon-credit-card"></i></li>
+									<li id="note" class="tac"><i class="glyphicon glyphicon-hand-up"></i></li>
+								</ul>
+							</div>
+							<div class="course-item-list-in-toolbar-pane ps-container" id="menu-tab">
+								<ul class="chats" id="course-item-list">
+									<li class="tac seewho">
+										<input type="radio" name="see" id="see1" value="0" checked /><label for="see1">看全部</label>
+										<input type="radio" name="see" id="see2" value="1" /><label for="see2">看老师</label>
+									</li>
+									<li class="chattime"><span>11:38</span></li>
+									<li>
+										<p class="title"><span class="author">嘿嘿</span>18:24:26</p>
+										<p class="content">fdfdfdfd</p>
+									</li>
+								</ul>
+								<div class="options">
+									<div class="emoji">
+										<ul>
+											<li><img src="files/emoji/2016/11-07/1.png" alt="表情1" /></li>
+											<li><img src="files/emoji/2016/11-07/2.png" alt="表情2" /></li>
+											<li><img src="files/emoji/2016/11-07/3.png" alt="表情3" /></li>
+											<li><img src="files/emoji/2016/11-07/4.png" alt="表情4" /></li>
+											<li><img src="files/emoji/2016/11-07/5.png" alt="表情5" /></li>
+											<li><img src="files/emoji/2016/11-07/6.png" alt="表情6" /></li>
+											<li><img src="files/emoji/2016/11-07/7.png" alt="表情7" /></li>
+											<li><img src="files/emoji/2016/11-07/8.png" alt="表情8" /></li>
+											<li><img src="files/emoji/2016/11-07/9.png" alt="表情9" /></li>
+											<li><img src="files/emoji/2016/11-07/10.png" alt="表情10" /></li>
+											<li><img src="files/emoji/2016/11-07/11.png" alt="表情11" /></li>
+											<li><img src="files/emoji/2016/11-07/12.png" alt="表情12" /></li>
+											<li><img src="files/emoji/2016/11-07/13.png" alt="表情13" /></li>
+											<li><img src="files/emoji/2016/11-07/14.png" alt="表情14" /></li>
+											<li><img src="files/emoji/2016/11-07/15.png" alt="表情15" /></li>
+											<li><img src="files/emoji/2016/11-07/16.png" alt="表情16" /></li>
+											<li><img src="files/emoji/2016/11-07/17.png" alt="表情17" /></li>
+											<li><img src="files/emoji/2016/11-07/18.png" alt="表情18" /></li>
+										</ul>
+									</div>
+									<div class="icons">
+										<ul class="nav nav-tabs" id="nav-tab-icon">
+											<li class="tac" id="zan"><img class="zan" src="assets/img/default/zan.png" /> (222)</li>
+											<li class="tac"><i class="glyphicon glyphicon-gift"></i></li>
+											<li id="js-emoji" class="tac"><i class="glyphicon glyphicon-th"></i></li>
+
+											<!--<li class="w20p"><input type="radio" name="see" id="see1" value="0" checked /><label for="see1">看全部</label></li>
+											<li class="w20p"><input type="radio" name="see" id="see2" value="1" /><label for="see2">看老师</label></li>-->
+										</ul>
+									</div>
+									<div class="inputs">
+										<input id="msg" placeholder="对大家说" /><button>发送</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
-		
+
 		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
