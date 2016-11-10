@@ -1,3 +1,12 @@
+.xin {
+	position: relative;
+}
+
+.xin:before {
+	position: absolute;
+	content: '新';
+}
+
 .placeholder {
   color: #999;
 }
@@ -1783,10 +1792,6 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   display: inline-block;
 }
 
-
-
-
-
 .webuploader-container {
   position: relative;
 }
@@ -1929,4 +1934,57 @@ tr.placeholder:before {
 }
 .form-group .select2-search input, .form-group .select2-search-choice-close, .form-group .select2-container .select2-choice abbr, .form-group .select2-container .select2-choice .select2-arrow b {
   background-size: 60px 50px!important;
+}
+
+.es-play {
+	position: absolute;
+	width: 40%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    margin: auto; 
+}
+
+.five-slide {
+	color: #fff;
+	border: 0 !important;
+	background-image: url(../img/default/five-slide.png);
+	background-repeat: no-repeat;
+}
+
+.five-slide-orange {
+	background-color: #febd41 !important;
+}
+
+.five-slide-red {
+	background-color: #ea4e49 !important;
+}
+
+.five-slide-purpose {
+	background-color: #8b43b0 !important;
+}
+
+.five-slide-green {
+	background-color: #00b780 !important;
+}
+
+.five-slide-blue {
+	background-color: #499dea !important;
+}
+
+.five-slide-darkBlue {
+	background-color: #4364b0 !important;
+}
+
+.five-slide-darkviolet {
+	background-color: #8b43b0 !important;
+}
+
+.five-slide-darkyellow {
+	background-color: #b9bf0e !important;
+}
+
+.five-slide-magenta {
+	background-color: #d1279b !important;
 }

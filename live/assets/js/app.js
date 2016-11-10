@@ -26,13 +26,6 @@ $(function() {
 			$("li.nav-hover >a").attr("data-toggle", "dropdown");
 		}
 
-		// 点击搜索框交互
-		$(".js-search").focus(function() {
-			$(this).prop("placeholder", "").addClass("active");
-		}).blur(function() {
-			$(this).prop("placeholder", '搜索').removeClass("active");
-		});
-
 		// 移动端页面时左侧信息栏
 		var eventtype = mobilecheck() ? 'touchstart' : 'click';
 

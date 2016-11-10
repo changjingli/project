@@ -24,10 +24,6 @@ a:hover {
 	padding: 0;
 }
 
-
-
-
-
 /*font*/
 
 
@@ -918,7 +914,7 @@ a:hover {
 
 .es-box .more {
 	position: absolute;
-	top: 20px;
+	top: 40px;
 	right: 20px;
 	font-size: 12px;
 	line-height: 24px;
@@ -926,12 +922,16 @@ a:hover {
 }
 
 .es-box > h2 {
+	height: 52px;
 	margin-left: -25px;
 	margin-bottom: 20px;
-	padding-left: 20px;
+	padding-left: 10px;
 	border-left: 4px solid #00b780;
-	color: #222;
+	color: #fff;
 	font-size: 24px;
+	line-height: 52px;
+	width: 133px;
+	cursor: pointer;
 }
 
 .main .es-box > ul.row,
@@ -956,9 +956,14 @@ a:hover {
 	padding-bottom: 5px;
 }
 
+.es-list-border li {
+	margin-left: -1px;
+	margin-bottom: -1px;
+	border: 1px solid #e4ecf3;
+}
 
 .es-course-list {
-	margin-bottom: 20px;
+	padding: 10px;
 	overflow: hidden;
 }
 
@@ -978,6 +983,10 @@ a:hover {
 	position: relative;
 }
 
+.course-top img {
+	max-width: 100%;
+}
+
 .course-top span {
 	position: absolute;
 	bottom: 0;
@@ -993,14 +1002,14 @@ a:hover {
 }
 
 .course-bottom {
-	padding: 15px;
-	background: #eaeaea;
+	padding: 15px 0 0;
+	/*background: #eaeaea;*/
 }
 
 .course-bottom h3 {
 	font-size: 16px;
 	line-height: 24px;
-	height: 48px;
+	height: 28px;
 	overflow: hidden;
 	color: #222;
 }
@@ -1008,13 +1017,14 @@ a:hover {
 .course-bottom .price-num {
 	margin-right: 10px;
 	font-size: 18px;
-	color: #ff5d42;
+	color: #63cf0b;
 }
 
 .course-bottom .student-num {
 	font-size: 12px;
 	line-height: 18px;
 	color: #a9a9a9;
+	vertical-align: -4px;
 }
 
 .course-bottom .nickname {
@@ -1233,12 +1243,13 @@ a:hover {
 	display: block;
 	font-size: 18px;
 	line-height: 24px;
-	color: #222;
+	color: #00b780;
 	text-decoration: none;
 }
 
 .teachers-item span,
 .promot-teacher span {
+	margin-bottom: 10px;
 	line-height: 24px;
 	height: 24px;
 	display: block;
@@ -1259,7 +1270,6 @@ a:hover {
 .teachers-item {
 	margin-bottom: 20px;
 	padding: 20px 10px;
-	background-color: #ececec;	
 }
 
 
@@ -1277,7 +1287,15 @@ a:hover {
 	line-height: 15px;
 	overflow: hidden;
 }
-
+.teachers .es-school {
+	display: inline;
+	font-size: 15px;
+	font-style: normal;
+	color: #00b780;
+	height: 15px;
+	line-height: 15px;
+	overflow: hidden;
+}
 
 /*comment*/
 .comment img {

@@ -1432,6 +1432,7 @@
 .homepage .vip ul li {
   padding-right: 10px;
   padding-left: 10px;
+  height: 266px;
 }
 @media (max-width: 767px) {
   .homepage .teachers ul li,
@@ -1910,6 +1911,20 @@ select:-webkit-autofill {
 .navbar-collapse {
   border-top: none;
 }
+.es-head {
+	height: 116px;
+	line-height: 116px;
+  border: none;
+  padding: 0 40px;
+  background-image: url(../../img/default/header-bg.png);
+}
+.es-head .navbar-user {
+	margin: 40px 0 0;
+	line-height: initial;
+}
+.es-head .logo {
+	width: 100px;
+}
 .es-header {
   background: #0095da;
   height: 60px;
@@ -2067,13 +2082,12 @@ select:-webkit-autofill {
 }
 .navbar-form .form-control {
   height: 30px;
-  width: 100px;
+  width: 300px;
   border-radius: 20px;
   line-height: 28px;
   padding: 0 24px 0 12px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-color: #fff;
 }
@@ -2086,6 +2100,7 @@ select:-webkit-autofill {
   top: 6px;
   border: none;
   background: none;
+  color: #0095da;
 }
 .nav > li.nav-more li .dropdown-menu {
   left: 100%;
@@ -2123,11 +2138,14 @@ select:-webkit-autofill {
 .nav.user-nav > li {
   float: left;
   height: 60px;
+  margin: 0 20px;
 }
 .nav.user-nav > li > a {
   display: block;
-  padding: 20px 15px;
-  color: #fff;
+  padding: 10px 25px;
+  color: #3c3c3c;
+  font-weight: bold;
+  background: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2147,11 +2165,9 @@ select:-webkit-autofill {
 }
 .nav.user-nav > li > a:hover,
 .nav.user-nav > li > a:focus {
-  color: #fff;
-  background: none;
+  color: #46c37b;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .nav.user-nav > li > a.hasmessage {
@@ -2213,12 +2229,12 @@ select:-webkit-autofill {
   position: relative;
 }
 .es-footer .copyright {
-  background: #2e2e2e;
+  background: #0095da;
   border-top: 1px solid #444;
   text-align: center;
   padding: 20px 0;
   line-height: 30px;
-  color: #c1c1c1;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .es-footer .copyright {
@@ -2227,21 +2243,23 @@ select:-webkit-autofill {
   }
 }
 .es-footer .copyright a {
-  color: #c1c1c1;
+  color: #fff;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 16px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .es-footer .copyright a:hover {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #fff;
+  margin: 0 8px;
+  color: #2e2e2e;
 }
 .es-footer-link {
-  background: #0095da;
+  background: #2e2e2e;
   padding: 55px 0;
   border-bottom: 1px solid #111;
 }
@@ -2251,7 +2269,7 @@ select:-webkit-autofill {
   }
 }
 .footer-main .link-item {
-  width: 20%;
+  width: 30%;
   float: left;
   padding: 0 10px;
 }
@@ -2309,6 +2327,10 @@ select:-webkit-autofill {
 .footer-logo .footer-sns {
   margin-top: 30px;
 }
+.footer-logo .text-logo {
+	margin-bottom: 30px;
+	max-width: 100%;
+}
 .footer-logo .footer-sns > a {
   display: inline-block;
 }
@@ -2347,7 +2369,7 @@ select:-webkit-autofill {
   background: #00a132;
 }
 .footer-logo .footer-sns i.es-icon-apple {
-  background: #3793f1;
+  background: #ff992c;
 }
 .footer-logo .footer-sns i.es-icon-apple:hover {
   background: #1571cf;
