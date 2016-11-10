@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>新闻 - 电教馆网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By 电教馆</title>
+		<meta name="keywords" content="电教馆网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="电教馆是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。电教馆提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，电教馆也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。电教馆产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，电教馆具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。电教馆开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="themes/graceful/graceful.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/web.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/member.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/article.css"/>
+
+		<link rel="stylesheet" type="text/css" href="assets/v2/css/libs.css" />
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+    <style type="text/css">
+			@font-face {
+				font-family: "es-icon";
+				src: url('assets/v2/fonts/es-icon.eot');
+				/* IE9*/
+				src: url('assets/v2/fonts/es-icon.eot?t=1459854189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('assets/v2/fonts/es-icon.woff?t=1459854189') format('woff'), /* chrome, firefox */
+				url('assets/v2/fonts/es-icon.ttf?t=1459854189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+				url('assets/v2/fonts/es-icon.svg?t=1459854189#es-icon') format('svg');
+				/* iOS 4.1- */
+			}
+		</style>
+  <![endif]-->
+
+	</head>
+
+	<body class="homepage">
+
+		<div class="es-wrap">
+			<!--顶部-->
+			<div class="es-head">
+				<img class="logo" src="assets/img/default/logo.png" />
+				<img src="assets/img/default/text-logo-shdow.png" />
+				<div class="navbar-user  left ">
+					<ul class="nav user-nav">
+						<li class="user-avatar-li nav-hover visible-xs">
+							<a href="javascript:;" class="dropdown-toggle">
+								<img class="avatar-xs" src="assets/img/default/avatar.png">
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="login.html">登录</a>
+								</li>
+								<li>
+									<a href="register.html">注册</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hidden-xs">
+							<a href="login.html">登录</a>
+						</li>
+						<li class="hidden-xs">
+							<a href="register.html">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--导航条-->
+			<header class="es-header navbar">
+				<nav class="collapse navbar-collapse">
+					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+						<li class="">
+							<a href="index.html">首页 </a>
+						</li>
+
+						<li class="nav-hover">
+							<a href="#">课程 <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="javascript:;">公开课</a>
+								</li>
+								<li>
+									<a href="javascript:;">课程功能</a>
+								</li>
+								<li>
+									<a href="javascript:;">系统管理</a>
+								</li>
+								<li>
+									<a href="javascript:;">官方应用</a>
+								</li>
+								<li>
+									<a href="javascript:;">班级中心</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="">
+							<a href="teacher.html">名师</a>
+						</li>
+
+						<li class="">
+							<a href="javascript:;">公益课堂</a>
+						</li>
+
+						<li class="">
+							<a href="courselist.html">直播学堂</a>
+						</li>
+
+						<li class="">
+							<a href="javascript:;">APP</a>
+						</li>
+
+						<li class="nav-more nav-hover">
+							<a class="more">其他
+								<!--<i class="es-icon es-icon-morehoriz"></i>-->
+							</a>
+							<ul class="dropdown-menu" role="menu">
+
+								<li class="">
+									<a href="#">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="javascript:;">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+						<div class="form-group">
+							<input class="form-control js-search" name="q" placeholder="搜索">
+							<button class="button es-icon es-icon-search"></button>
+						</div>
+					</form>
+				</nav>
+			</header>
+			<!--导航条结束-->
+
+			<div id="main" class="container">
+
+				<div class="es-row-wrap mg-t-30">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<div class="btn-group pull-right">
+									<label class="btn btn-default active"><a href="news.php?mod=index&amp;do=index">全部资讯</a></label>
+									<label class="btn btn-default "><a href="news.php?mod=index&amp;do=index&amp;type=1">网校动态</a></label>
+									<label class="btn btn-default "><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态</a></label>
+								</div>
+								<h1>资讯动态</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="row article-row">
+						<div class="col-md-8">
+
+							<ul class="article-wide-list">
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-11-08 08:42</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=802">专家呼吁：数字时代高校图书馆发展需要创新服务 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-11-08 08:41</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=801">诺丁斯：关心是教育的另一种模式 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-11-07 08:58</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=800">教育部：坚定不移推进教育系统全面从严治党 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-11-07 08:57</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=799">机会永远不会向年轻人关上大门 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-24 08:59</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=798">“走好我们这一代人的长征路” </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-24 08:58</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=797">新华社评论员：弘扬长征精神，激发奋进力量 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-19 09:38</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=796">读经典好书要趁青春好时光 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-19 08:31</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=795">杭高一位教师因病去世，留下一段感人师生情 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-18 08:50</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=794">美国幼儿阅读习惯是这样炼成的 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-18 08:47</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=793">“名校”未必有真经 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-17 08:48</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=792">教师教研主体意识的觉醒 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-17 08:47</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=791">刘延东：深化创新创业教育改革 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-14 08:37</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=790">赤水：缓缓流淌在心中的红 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-14 08:36</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=789">“双一流”不可能和学术腐败兼容 </a></h4>
+									</div>
+								</li>
+
+								<li class="media article-item clearfix">
+									<div class="article-title text-muted">
+										<div class="pull-left">
+											<span><a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态 </a></span>
+										</div>
+										<div class="published-time">2016-10-13 08:42</div>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading" style="font-weight:normal;"><a href="news.php?mod=index&amp;do=show&amp;news_id=788">责备孩子不懂规矩成人先要自省 </a></h4>
+									</div>
+								</li>
+
+							</ul>
+							<ul class="pagination">
+								<li class="active"><span>1</span></li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=2">2</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=3">3</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=4">4</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=5">5</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=6">6</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=7">7</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=8">8</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=9">9</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=10">10</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=52" class="last">... 52</a>
+								</li>
+								<li></li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=&amp;page=2" class="nxt">下一页</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="col-md-4">
+							<div class="panel panel-default sub-articles">
+								<div class="panel-heading">
+									<h3 class="panel-title">热门资讯</h3>
+								</div>
+								<div class="panel-body">
+									<ul class="media-list">
+										<li class="media">
+											<span class="rank_num">1</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=53" title="教学信念是教师卓越的“灵魂”——嘉善县泗洲中学举办“2015教师卓越发展论坛”">教学信念是教师卓越的“灵魂”——嘉善 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">2</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=12" title="教育网站和网校暂行管理办法">教育网站和网校暂行管理办法 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">3</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=512" title="母亲节，感受身边那些温暖动人的力量">母亲节，感受身边那些温暖动人的力量 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">4</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=52" title="【回看教育】孩子你知道，为什么要求你用功读书吗">【回看教育】孩子你知道，为什么要求你 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">5</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=2" title="2014年在线教育投资规模180亿元">2014年在线教育投资规模180亿元 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">6</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=22" title="超强台风“灿鸿”11日中午到傍晚在三门到舟山沿海登陆或穿过">超强台风“灿鸿”11日中午到傍晚在三门 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">7</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=13" title="教育部办公厅关于开展优秀网络课程及资源征集活动的通知">教育部办公厅关于开展优秀网络课程及资 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">8</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=14" title="在线教育行业表现抢眼政策利好市场空间广阔">在线教育行业表现抢眼政策利好市场空间 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">9</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=21" title="教育需要尊重">教育需要尊重</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">10</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=20" title="教育部公布有偿补课统一监督举报电话">教育部公布有偿补课统一监督举报电话 ...</a>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="panel panel-default sub-articles">
+								<div class="panel-heading">
+									<h3 class="panel-title">推荐资讯</h3>
+								</div>
+								<div class="panel-body">
+									<ul class="media-list">
+										<li class="media">
+											<span class="rank_num">1</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=61" title="快速读懂习近平“9·3阅兵”重要讲话">快速读懂习近平“9·3阅兵”重要讲话 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">2</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=47" title="给青少年来点“逆向关怀”">给青少年来点“逆向关怀”</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">3</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=40" title="如果没时间学习建构主义，至少花1分钟读完这8条原则">如果没时间学习建构主义，至少花1分钟 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">4</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=34" title="“互联网+培训”的五个冷思考">“互联网+培训”的五个冷思考 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">5</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=21" title="教育需要尊重">教育需要尊重</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">6</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=20" title="教育部公布有偿补课统一监督举报电话">教育部公布有偿补课统一监督举报电话 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">7</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=19" title="浙江：嘉兴市扎实开展“护苗2015”专项行动">浙江：嘉兴市扎实开展“护苗2015”专项 ...</a>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="go-top" id="go-top" style="display: block;">
+				<a href="javascript:;" class="go"></a>
+			</div>
+
+			<div class="es-footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 footer-logo hidden-sm hidden-xs">
+							<a class="" href="" target="_blank">
+								<img src="assets/img/default/logo.png" alt="建议图片大小为233*64">
+							</a>
+
+							<div class="footer-sns">
+								<img class="text-logo" src="assets/img/default/logo-text.png" />
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-weixin"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/weixin.png" alt="微信端">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-apple"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/apple.png" alt="苹果端">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-android"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/android.png" alt="安卓端">
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-offset-1 col-md-6 footer-main clearfix">
+							<div class="link-item ">
+								<h3>我是老师</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">发布课程</a>
+									</li>
+									<li>
+										<a href="javascript:;">使用题库</a>
+									</li>
+									<li>
+										<a href="javascript:;">教学资料库</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是管理员</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">系统设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">课程设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">用户管理</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item">
+								<h3>关于我们</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">电教馆官网</a>
+									</li>
+									<li>
+										<a href="javascript:;">加入我们</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<footer class="es-footer">
+				<div class="copyright">
+					<div class="container">
+						由
+						<a href="http://www.chinaschooling.com.cn/">上学啦网络信息技术有限公司</a>提供技术支持
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+	</html>

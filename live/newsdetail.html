@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+	<!--<![endif]-->
+	<html lang="zh_CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>新闻详情 - 电教馆网络课堂演示站 - 网校领导品牌，在线教育网站建站系统 - Powered By 电教馆</title>
+		<meta name="keywords" content="电教馆网络课堂，在线教育，在线教学，开源教学软件" />
+		<meta name="description" content="电教馆是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。电教馆提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，电教馆也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。电教馆产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，电教馆具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。电教馆开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。" />
+
+		<link href="assets/libs/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet" />
+
+		<link rel="stylesheet" media="screen" href="assets/css/common.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/font-awesome.css" />
+		<link rel="stylesheet" media="screen" href="assets/v2/css/es-icon.css" />
+
+		<link href="assets/v2/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="themes/graceful/graceful.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/web.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/member.css" />
+		<link rel="stylesheet" type="text/css" href="bundles/topxiaweb/css/article.css" />
+
+		<link rel="stylesheet" type="text/css" href="assets/v2/css/libs.css" />
+
+		<!--[if lt IE 9]>
+    <script src="assets/libs/html5shiv.js"></script>
+    <script src="assets/libs/respond.min.js"></script>
+    <style type="text/css">
+			@font-face {
+				font-family: "es-icon";
+				src: url('assets/v2/fonts/es-icon.eot');
+				/* IE9*/
+				src: url('assets/v2/fonts/es-icon.eot?t=1459854189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('assets/v2/fonts/es-icon.woff?t=1459854189') format('woff'), /* chrome, firefox */
+				url('assets/v2/fonts/es-icon.ttf?t=1459854189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+				url('assets/v2/fonts/es-icon.svg?t=1459854189#es-icon') format('svg');
+				/* iOS 4.1- */
+			}
+		</style>
+  <![endif]-->
+
+	</head>
+
+	<body class="homepage">
+
+		<div class="es-wrap">
+			<!--顶部-->
+			<div class="es-head">
+				<img class="logo" src="assets/img/default/logo.png" />
+				<img src="assets/img/default/text-logo-shdow.png" />
+				<div class="navbar-user  left ">
+					<ul class="nav user-nav">
+						<li class="user-avatar-li nav-hover visible-xs">
+							<a href="javascript:;" class="dropdown-toggle">
+								<img class="avatar-xs" src="assets/img/default/avatar.png">
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="login.html">登录</a>
+								</li>
+								<li>
+									<a href="register.html">注册</a>
+								</li>
+							</ul>
+						</li>
+						<li class="hidden-xs">
+							<a href="login.html">登录</a>
+						</li>
+						<li class="hidden-xs">
+							<a href="register.html">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--导航条-->
+			<header class="es-header navbar">
+				<nav class="collapse navbar-collapse">
+					<ul class="nav navbar-nav clearfix hidden-xs " id="nav">
+
+						<li class="">
+							<a href="index.html">首页 </a>
+						</li>
+
+						<li class="nav-hover">
+							<a href="#">课程 <b class="caret"></b></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="javascript:;">公开课</a>
+								</li>
+								<li>
+									<a href="javascript:;">课程功能</a>
+								</li>
+								<li>
+									<a href="javascript:;">系统管理</a>
+								</li>
+								<li>
+									<a href="javascript:;">官方应用</a>
+								</li>
+								<li>
+									<a href="javascript:;">班级中心</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="">
+							<a href="teacher.html">名师</a>
+						</li>
+
+						<li class="">
+							<a href="javascript:;">公益课堂</a>
+						</li>
+
+						<li class="">
+							<a href="courselist.html">直播学堂</a>
+						</li>
+
+						<li class="">
+							<a href="javascript:;">APP</a>
+						</li>
+
+						<li class="nav-more nav-hover">
+							<a class="more">其他
+								<!--<i class="es-icon es-icon-morehoriz"></i>-->
+							</a>
+							<ul class="dropdown-menu" role="menu">
+
+								<li class="">
+									<a href="#">会员 </a>
+								</li>
+
+								<li class="">
+									<a href="javascript:;">资讯 </a>
+								</li>
+
+								<li class="">
+									<a href="/group">小组 </a>
+								</li>
+
+								<li class="nav-hover">
+									<a href="javascript:;">关于我们 <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="javascript:;">电教馆官网</a>
+										</li>
+										<li>
+											<a href="javascript:;">开放云平台</a>
+										</li>
+										<li>
+											<a href="javascript:;">气球鱼学院</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-xs hidden-sm" action="/search" method="get">
+						<div class="form-group">
+							<input class="form-control js-search" name="q" placeholder="搜索">
+							<button class="button es-icon es-icon-search"></button>
+						</div>
+					</form>
+				</nav>
+			</header>
+			<!--导航条结束-->
+
+			<div id="main" class="container">
+				<div class="es-row-wrap">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h1>资讯消息</h1></div>
+						</div>
+					</div>
+
+					<div class="row article-row">
+						<div class="col-md-8">
+
+							<ul class="breadcrumb">
+								<li>
+									<a href="news.php?mod=index&amp;do=index">资讯消息</a>
+								</li>
+								<li>
+									<a href="news.php?mod=index&amp;do=index&amp;type=2">行业动态</a>
+								</li>
+								<li class="active">正文</li>
+							</ul>
+
+							<h2 class="thread-title">诺丁斯：关心是教育的另一种模式</h2>
+							<div class="published-time pull-left">2016-11-08 08:41</div>
+							<div class="published-time pull-right">32 次浏览</div>
+							<p><br></p>
+							<div class="thread-body" style="margin-top:10px;line-height:28px;font-size:16px;">
+								&nbsp; &nbsp; &nbsp; &nbsp; 第一次接触诺丁斯的教育思想，也许是在阅读《异域察论——德国和美国教育学研究》一书的时候。我后来在读后感中也曾提到，“诺丁斯指出学生正在接受‘一种道德上贫困的教育’，很多学生不仅牺牲了当下的幸福，也错失了真正的学习，尤其是‘将学习成绩和道德善良合二为一的倾向’是有害的。我们应该将道德目的置于教育目的的首位，培养学会关心的有道德的人，真正使学生成为一个完整的人。”正是这一“邂逅”，使得我在图书馆书架上一看到《学会关心：教育的另一种模式》（[美]内尔·诺丁斯/著 于天龙/译 教育科学出版社），就有一种亲切感。<br>　　诺丁斯是一位具有国际影响的教育学者，她始终与基础教育的实践与变革保持着亲密的接触。我与诺丁斯——一名中国教师与一名美国的曾经的教师，围绕“关心”这一主题，我们之间有相同点也有不同点。相同点在于，我们认为我们应该关心自我，关心所有与自己有关系和没有关系的人，关心非人类的生命，关心物质世界。而不同点在于，我的观点尽管也偶尔与人分享，但主要还是止步于“独善其身”的自我修炼，不像诺丁斯是要激起整个社会层面或教育领域的根本变革。这是境界上的巨大差距，而我正是带着这个差距开始这一次阅读的。<br>　　关心与被关心既是需要也是能力<br>　　教育的使命之一应该是回答如何才能保证我们与别人在同一片天空下更好地生活和工作。然而诺丁斯却认为，最近40年来急剧的社会变化已经使年轻人失去一种连续性（关心伦理用语），失去被关心的感觉，而当代公立学校教育最严重的缺陷可能就是对人的精神世界的忽视（她说的是美国）。<br>　　现在的“00后”当然具有极强的自我意识和个人主义，但是，他们同时也富有深切关怀他人的潜力，可惜的是学校很少给他们提供机会。关心的主题包括关心自我，关心他人，关心物质世界，关心精神世界。而这些是我们所有教育工作者必须在日常工作中渗透的——师生之间必须经常进行有关的谈话与探讨。<br>　　诺丁斯指出，当前基础教育课程的内容并不是人人都需要的，而关心的态度、知识和技巧却更有必要让学生们掌握。她引用了一个调查数据：只有1/3的学生称他们的老师关心他们——孩子们不仅对老师缺乏信任，也缺乏最基本的对他人的尊重。<br>　　现实中，大多数教师都勤勤恳恳地工作，并且声称他们心里装着学生。问题在于，他们中很多人无法与自己的学生成功沟通，建立关心与被关心的双边关系。因为，如果关心以不被学生们接受的方式出现，那么它也不可能被学生们认识到。仅仅说“我关心”是不够的，关心伦理强调关心者是否有能力建立关心的关系。<br>　　关心伦理最基本思想是对每一个个体的需要予以恰当反应，目的是建立并且维护关心关系。反应是关心的核心，也是关心教育的核心。认真倾听并且积极回应是关心的基本标志，教师需要更认真地倾听和理解孩子。记得在我的中学时代，每逢假期我都会围绕“这学期我对同学们付出的关心是不是太少了”这一问题进行反思甚至自责。这里的“关心”是一种同学间平等的关系，是一种自发的需要。<br>　　师生关系，在本质上则是不平等的人际关系。学生们既要学习如何在一种平等或不平等的关系中关心他人，更应该学会如何成为积极的被关心者。只有学会如何分辨关心，接受关心，他们才能逐渐学会关心他人。作为关心的接受者，他们必须要对教师的努力有所回应。学生们一定要明白，他们的反应会激发或打消一个教师的热情。<br>　　诺丁斯认为，身为教师的一个最重要的任务就是帮助学生学会接受关心。“如果一个孩子在进入小学时还没有学会如何接受关心，那么这个孩子的人生将处于危险之中。”<br>　　传递道德的知识<br>　　在20世纪初始，杜威就强调改革学校结构和教育过程，以便更好地反映学生的需要和兴趣，但并不主张对传统学科设置进行改组。诺丁斯则认为传统学科设置必须进行改组（“我的主张超越了杜威思想”），人类问题（关心）应该成为课程的核心内容，传统学科内容要服务于这个核心。<br>　　诺丁斯强调，教育的主要目的应该是培养有能力、关心人、爱人并且可爱的人，为了实现这一目的，关心必须主导学校课程。<br>　　以传统学科教学为核心的普通教育课程不是所有孩子都需要的理想课程，孩子的受教育权不应该局限于某一方面。“当前对学生在语文、数学和科学考试成绩的重视已经基本定义了学校的任务和目标。”但是，没有道理将这样一个学校体系强加给所有人。<br>　　诚然，有时候传统的方法是更加有效的教学，但是这些绝不应该在学校教育中占太大比例。除了在书本上发现问题寻求答案，我们还可以在任何感兴趣的地方获得人生的灵感和意义。当代教育哲学的一个重大发展是，许多人都相信学生们花费在准备考试的那些时间本来可以用来探索新思想，发现新兴趣，扩展知识，陶冶情操。然而，在标准化考试的压力下，教师们都忙于给学生们灌输阅读材料中可以死记硬背的东西了，根本没有时间开展有意义的讨论和对话。<br>　　不少学生认为学习那些各自独立互不相关的学科知识困难乏味，与他们的真实生活没有多大关系。当前学校体系里的“关心者”往往觉得他们知道要关心的人的利益是什么，鼓励甚至强迫学生去学习我们为其事先规定的课程内容，而强迫意识的延续，实在是传统教育的一大悲剧。<br>　　“很多人错误地提前假定了教育的结果，他们声称知道人们的良知应该向哪种方向发展，而真实的教育就像对话一样，事先是不应该设定结果的。”为了让学生应付升学的需要，教师给学生成堆的考试、大量的记忆材料，靠作业和纪律推动和规范学生，而忽视孩子们的实际生活。现在的教育，似乎比赛的结果早就被设定了，这才是必须改变的东西，教师应该邀请学生参与到课程设计、课堂教学过程中来。<br>　　传统学校的教育无论在智力上还是道德上都已经不能满足当代社会的需要。每天在学校里的一部分时间应该用来进行关心教育，教师应该允许学生承认错误，产生疑惑，甚至表达对某些课程的反感。我们传统上强调教育的道德意义，往往强调的是在学校里进行专门的道德教育而忽视了整个学校的道德使命。诺丁斯提倡在每一天的真实生活中运用批判性思维，学生们可以在学校内选择跟从实践不同教育哲学的教师。<br>　　何时学会关心都不晚<br>　　有一个根本上的问题是：什么样的人可称为受过良好教育的人？在这本再版的《学会关心：教育的另一种模式》中，诺丁斯为我们再次描画了一幅崭新的教育蓝图：不同的人具有不同的优长，这些优长应该在一个充满关心而非竞争的环境里得以培养。<br>　　当今社会，教育的经济功能几乎左右了人们的视野，加在学校头上的任务实在太多了，而学校不堪重负即想方设法让那些聪明的学生去学他们不想学的东西。这几乎成了一个规律：一个问题产生了，就添加一个课程来应付。<br>　　现在还有许多人认为“所有孩子都能学习（学好）”，这显然是不符合事实的。“作为一个前任数学教师，我心里十分清楚，不管你教得多么好，学生们之间的接受程度总是存在相当大的差异。”“任何一个孩子在我们生命中的位置都不应该只取决于他在学术方面的能力。”关于这一点，现在比以往任何时候都更具有现实意义。<br>　　杜威说过，最好的最智慧的父母为其孩子所争取的，一定也是整个社会为所有的孩子所争取的。诺丁斯赞同这一说法，但同时怀疑这个世界上是否真的存在一个对所有人而言都是最好的教育。她认为，给所有孩子一个同等质量的教育并非意味着给所有孩子一个相同的教育。“为什么让所有学生，不管他们的能力高低、爱好异同以及对未来的计划如何，都在几何与代数课程里挣扎呢？”<br>　　任何教育，如果只重视一部分人类能力并且围绕它们来组织课程教学，那么就不可能成为面向所有人的最好的教育。在目前的标准课程体系下，很多人没有机会发展并且显示他们真正的长处，进而选择一个真正适合自己的职业。没有多少人认识到，成功应该具有不同的形式，持各种不同才能的人应该都有成功的机会。<br>　　诺丁斯略带悲凉地发问：“如果一个孩子已经在这个系统的最底层挣扎了12年，他还会坚持认为，这只是一个失败，还有别的成功的机会吗？”<br>　　在这里，我倒是想给出一个比较乐观的回答：无论是教育者还是学生，何时学会关心都不晚。我可以引用此书中的一个案例来支撑我的乐观：在一些高中，教师们开始安排一些可能中途辍学的学生们去帮助小学里学习有困难的孩子，辅导孩子们做家庭作业，他们开始认识到自己具有的潜力，进而认识到教育的价值。这说明，青少年需要机会发展他们正在形成的利他主义。与此同时，如果在学校里一个孩子因为某方面的才能而受到尊敬和赞美，那么对他（她）自己的自信心也是巨大的鼓励。<br>　　诺丁斯指出，教师培养的方式必须以学生的需要为根本基础，而不是在“如何能够使孩子更愿意学某某学科”等问题上耗费时间。教师必须熟悉自己的领域，在此基础上发现学生们的潜力和弱点，并且鼓励学生们在这个领域内积极探索。她认为评估不应该涉及比较，从关心的角度出发，不应该问“小明学会了什么什么吗”，而应该问“小明学会了什么”。<br>　　我并不赞成诺丁斯对“竞争”的回避与全盘否定——其实，“关心”的力量又何尝不是一种“竞争力”呢？但我赞成对“竞争”的淡化，不希望教育者与学生“都不惜代价将自己置身于一种战斗的状态”。<br>　　总之，飞速发展的时代给教育带来了比以往多得多的机遇与挑战，我们该如何面对这样那样的困惑？不妨引用此书“代后记”《在一个缺乏关心的年代学会关心》中的一句话，那就是“我们更需要哲学上的变革而不是方法上的创新”。<br>
+								<p>　　我相信，无论是在美国还是中国，诺丁斯的这一教育模式也许都将是一种永远在路上的教育理想，但是它的现实的积极作用却是我们不可忽视的。</p>
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+								<p><br></p>
+								<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;来源：中国教育报</p>
+							</div>
+							<p><br></p>
+							<ul class="pager">
+								<li class="previous">
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=802">← 上一篇</a>
+								</li>
+
+								<li class="next">
+									<a href="news.php?mod=index&amp;do=show&amp;news_id=800"> 下一篇 →</a>
+								</li>
+							</ul>
+							<div class="share pull-right" data-bdtext=""></div>
+						</div>
+						<div class="col-md-4">
+							<div class="panel panel-default sub-articles">
+								<div class="panel-heading">
+									<h3 class="panel-title">热门资讯</h3>
+								</div>
+								<div class="panel-body">
+									<ul class="media-list">
+										<li class="media">
+											<span class="rank_num">1</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=53" title="教学信念是教师卓越的“灵魂”——嘉善县泗洲中学举办“2015教师卓越发展论坛”">教学信念是教师卓越的“灵魂”——嘉善 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">2</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=12" title="教育网站和网校暂行管理办法">教育网站和网校暂行管理办法 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">3</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=512" title="母亲节，感受身边那些温暖动人的力量">母亲节，感受身边那些温暖动人的力量 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">4</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=52" title="【回看教育】孩子你知道，为什么要求你用功读书吗">【回看教育】孩子你知道，为什么要求你 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">5</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=2" title="2014年在线教育投资规模180亿元">2014年在线教育投资规模180亿元 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">6</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=22" title="超强台风“灿鸿”11日中午到傍晚在三门到舟山沿海登陆或穿过">超强台风“灿鸿”11日中午到傍晚在三门 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">7</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=13" title="教育部办公厅关于开展优秀网络课程及资源征集活动的通知">教育部办公厅关于开展优秀网络课程及资 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">8</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=14" title="在线教育行业表现抢眼政策利好市场空间广阔">在线教育行业表现抢眼政策利好市场空间 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">9</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=21" title="教育需要尊重">教育需要尊重</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">10</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=20" title="教育部公布有偿补课统一监督举报电话">教育部公布有偿补课统一监督举报电话 ...</a>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="panel panel-default sub-articles">
+								<div class="panel-heading">
+									<h3 class="panel-title">推荐资讯</h3>
+								</div>
+								<div class="panel-body">
+									<ul class="media-list">
+										<li class="media">
+											<span class="rank_num">1</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=61" title="快速读懂习近平“9·3阅兵”重要讲话">快速读懂习近平“9·3阅兵”重要讲话 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">2</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=47" title="给青少年来点“逆向关怀”">给青少年来点“逆向关怀”</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">3</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=40" title="如果没时间学习建构主义，至少花1分钟读完这8条原则">如果没时间学习建构主义，至少花1分钟 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">4</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=34" title="“互联网+培训”的五个冷思考">“互联网+培训”的五个冷思考 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">5</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=21" title="教育需要尊重">教育需要尊重</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">6</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=20" title="教育部公布有偿补课统一监督举报电话">教育部公布有偿补课统一监督举报电话 ...</a>
+											</div>
+										</li>
+										<li class="media">
+											<span class="rank_num">7</span>
+											<div class="media-body">
+												<a href="news.php?mod=index&amp;do=show&amp;news_id=19" title="浙江：嘉兴市扎实开展“护苗2015”专项行动">浙江：嘉兴市扎实开展“护苗2015”专项 ...</a>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="go-top" id="go-top" style="display: block;">
+				<a href="javascript:;" class="go"></a>
+			</div>
+
+			<div class="es-footer-link">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 footer-logo hidden-sm hidden-xs">
+							<a class="" href="" target="_blank">
+								<img src="assets/img/default/logo.png" alt="建议图片大小为233*64">
+							</a>
+
+							<div class="footer-sns">
+								<img class="text-logo" src="assets/img/default/logo-text.png" />
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-weixin"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/weixin.png" alt="微信端">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-apple"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/apple.png" alt="苹果端">
+									</div>
+								</a>
+								<a class="qrcode-popover top">
+									<i class="es-icon es-icon-android"></i>
+									<div class="qrcode-content">
+										<img src="assets/img/default/android.png" alt="安卓端">
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-md-offset-1 col-md-6 footer-main clearfix">
+							<div class="link-item ">
+								<h3>我是老师</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">发布课程</a>
+									</li>
+									<li>
+										<a href="javascript:;">使用题库</a>
+									</li>
+									<li>
+										<a href="javascript:;">教学资料库</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item ">
+								<h3>我是管理员</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">系统设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">课程设置</a>
+									</li>
+									<li>
+										<a href="javascript:;">用户管理</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="link-item">
+								<h3>关于我们</h3>
+								<ul>
+									<li>
+										<a href="javascript:;">电教馆官网</a>
+									</li>
+									<li>
+										<a href="javascript:;">加入我们</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<footer class="es-footer">
+				<div class="copyright">
+					<div class="container">
+						由
+						<a href="http://www.chinaschooling.com.cn/">上学啦网络信息技术有限公司</a>提供技术支持
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/libs/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/bootstrap/3.0.2/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/libs/translator.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/placeholder.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+	</html>
