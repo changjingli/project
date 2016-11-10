@@ -1,0 +1,4 @@
+//  http://www.jxzhjy.com/teacher.php  教师列表
+http://www.jxzhjy.com/user.php?mod=teacher&uid=84884  教师详情
+http://www.jxzhjy.com/news.php  资讯列表
+http://www.jxzhjy.com/news.php?mod=index&do=show&news_id=802  资讯详情

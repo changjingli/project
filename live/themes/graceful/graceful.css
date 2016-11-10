@@ -188,14 +188,14 @@ a:hover {
 
 .one-nav .navbar-brand-logo {
 	overflow: hidden;
-	color: #02b980;
+	color: #00b77f;
 	text-decoration: none;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
 .one-nav .navbar-brand-logo:hover {
-	color: #02b980;
+	color: #00b77f;
 	text-decoration: none;
 }
 
@@ -277,7 +277,7 @@ a:hover {
 	padding: 0 0 0 20px;
 	height: 36px;
 	line-height: 36px;
-	background-color: #02b980;
+	background-color: #00b77f;
 	color: #fff;
 }
 
@@ -345,7 +345,7 @@ a:hover {
 }
 
 .one-nav .navbar-form .form-control:focus {
-	border-color: #02b980;
+	border-color: #00b77f;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(22, 218, 178, 0.6);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(22, 218, 178, 0.6);
 }
@@ -373,7 +373,7 @@ a:hover {
 .one-nav .menu-sec {
 	position: relative;
 	width: 100%;
-	background-color: #02b980;
+	background-color: #00b77f;
 	overflow: hidden;
 	height: 40px;
 }
@@ -464,7 +464,7 @@ a:hover {
 	display: none;
 	width: 150px;
 	height: auto;
-	background-color: #02b980;
+	background-color: #00b77f;
 	border-top: none;
 	padding-left: 0;
 }
@@ -477,7 +477,7 @@ a:hover {
 .one-nav .menu-more li a {
 	display: block;
 	padding: 5px 0 5px 30px;
-	background-color: #02b980;
+	background-color: #00b77f;
 	color: #fff;
 	text-decoration: none;
 }
@@ -502,7 +502,7 @@ a:hover {
 	margin: 0;
 	font-size: 14px;
 	list-style: none;
-	background-color: #02b980;
+	background-color: #00b77f;
 	border: none;
 	border-radius: 0;
 	-webkit-box-shadow: none;
@@ -589,7 +589,7 @@ a:hover {
 		border-right: 0;
 		border-left: 0;
 		border-bottom-width: 1px;
-		background-color: #02b980;
+		background-color: #00b77f;
 	}
 
 
@@ -657,7 +657,7 @@ a:hover {
 		left: 0;
 		padding: 20px;
 		width: 100%;
-		background-color: #02b980;
+		background-color: #00b77f;
 		border-radius: 0;
 	}
 
@@ -768,7 +768,7 @@ a:hover {
 	}
 
 	.one-nav .menu-sec > li {
-		background-color: #02b980;
+		background-color: #00b77f;
 		display: block;
 		float: none
 	}
@@ -847,7 +847,7 @@ a:hover {
 		width: 50px;
 		height: 48px;
 		line-height: 48px;
-		background-color:#02b980;
+		background-color:#00b77f;
 		color: #fff;
 		outline: none;
 	}
@@ -918,7 +918,7 @@ a:hover {
 	right: 20px;
 	font-size: 12px;
 	line-height: 24px;
-	color: #02b980;
+	color: #00b77f;
 }
 
 .es-box > h2 {
@@ -993,7 +993,7 @@ a:hover {
 	left: 0;
 	display: block;
 	padding: 10px;
-	background-color: #02b980; 
+	background-color: #00b77f; 
 	background-color: rgba(2,185,128,0.8);
 	color: #fff; 
 	font-size: 12px;
@@ -1042,7 +1042,7 @@ a:hover {
 	bottom: 0;
 	right: 0;
 	padding: 20px;
-	background-color: #02b980;
+	background-color: #00b77f;
 	color: #fff;
 	opacity: 0;
 	filter:Alpha(opacity=0);
@@ -1125,7 +1125,7 @@ a:hover {
 }
 
 .news li a {
-	color: #02b980;
+	color: #00b77f;
 	display: block;
 	height: 20px;
 	line-height: 20px;
@@ -1170,7 +1170,7 @@ a:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: #02b980;
+	background-color: #00b77f;
 	width: 40px;
 	text-align: center;
 	color: #fff;
@@ -1193,7 +1193,7 @@ a:hover {
 }
 
 .group > ul > li h3 a:hover {
-	color: #02b980;
+	color: #00b77f;
 }
 
 .group > ul > li > div > span a {
@@ -1348,8 +1348,8 @@ a:hover {
 
 .tag-list a:hover {
 	color: #fff;
-	background-color: #02b980;
-	border-color: #02b980;
+	background-color: #00b77f;
+	border-color: #00b77f;
 }
 
 /*class-list*/
@@ -1419,7 +1419,7 @@ a:hover {
 }
 
 .zhibo-side .class-list li p > span {
-	color: #02b980;
+	color: #00b77f;
 }
 
 .class-nav {
@@ -1454,7 +1454,7 @@ a:hover {
 }
 .login-box-main h4 {
 	padding: 10px 0 10px 0;
-	color: #02b980;
+	color: #00b77f;
 	height: 40px;
 	overflow: hidden;
 }
@@ -1560,7 +1560,7 @@ a:hover {
 	text-align: center;
 	font-size: 20px;
 	color: #fff;
-	background-color: #02b980;
+	background-color: #00b77f;
 }
 
 .es-box .actions .btn:hover,
@@ -1592,11 +1592,11 @@ a:hover {
 }
 
 .news-side li a:hover {
-	color: #02b980;
+	color: #00b77f;
 }	
 
 .news-side li span {
-	color: #02b980;
+	color: #00b77f;
 }
 
 /*status-side*/
@@ -1615,7 +1615,7 @@ a:hover {
 }
 
 .status-side .media-body a {
-	color: #02b980;
+	color: #00b77f;
 }
 
 /*the-vip-content*/
@@ -1654,7 +1654,7 @@ a:hover {
 	line-height: 30px;
 	text-align: center;
 	color: #fff;
-	background-color: #02b980;
+	background-color: #00b77f;
 }
 
 /*footer*/
@@ -1672,7 +1672,7 @@ a:hover {
 
 #footer-fir .site-footer-logo {
 	font-size: 28px;
-	color: #02b980;
+	color: #00b77f;
 }
 
 #footer-fir .site-footer-links {
@@ -1701,7 +1701,7 @@ a:hover {
 }
 
 #footer-fir p.edusoho a {
-	color: #02b980;
+	color: #00b77f;
 }
 
 #footer-sec {
@@ -1779,7 +1779,7 @@ a:hover {
 }
 
 #footer-sec a:hover {
-	color: #02b980;
+	color: #00b77f;
 }
 
 /*fixed-bar*/
@@ -1818,7 +1818,7 @@ a:hover {
 .nav-pills>li.active>a, 
 .nav-pills>li.active>a:hover, 
 .nav-pills>li.active>a:focus {
-	background-color: #02b980;
+	background-color: #00b77f;
 	color: #fff;
 }
 
@@ -1830,7 +1830,7 @@ a:hover {
 .pagination>li>span,
 .pagination>li>a:hover, 
 .pagination>li>span:hover {
-	color: #02b980;
+	color: #00b77f;
 }
 
 .pagination>.active>a, 
@@ -1839,8 +1839,8 @@ a:hover {
 .pagination>.active>span:hover, 
 .pagination>.active>a:focus, 
 .pagination>.active>span:focus {
-	background-color: #02b980;
-	border-color: #02b980;
+	background-color: #00b77f;
+	border-color: #00b77f;
 	color: #fff;
 }
 
@@ -1848,14 +1848,14 @@ a:hover {
 
 .list-group-panel .list-group-item.active, 
 .list-group-panel .list-group-item.active:hover {
-	color: #02b980;
-	border-color: #02b980;
+	color: #00b77f;
+	border-color: #00b77f;
 }
 
 .btn-primary,
 .btn-info {
-	background-color: #02b980;
-	border-color: #02b980;
+	background-color: #00b77f;
+	border-color: #00b77f;
 }
 
 .btn-primary:hover, 
@@ -1878,12 +1878,12 @@ a.list-group-item.active:focus {
 /*my/teaching/courses*/
 .label-success,
 .label-info {
-	background-color: #02b980;
+	background-color: #00b77f;
 }
 
 
 .btn-link {
-	color: #02b980;
+	color: #00b77f;
 }
 
 .btn-link:hover,
@@ -1892,7 +1892,7 @@ a.list-group-item.active:focus {
 }
 
 .progress-bar {
-	background-color: #02b980;
+	background-color: #00b77f;
 }
 
 .lesson-dashboard-page .fixed-bar {
@@ -1911,7 +1911,7 @@ a.list-group-item.active:focus {
 } 
 
 .list-order {
-	color: #02b980;
+	color: #00b77f;
 	float:left;
 	font-size:1.2em;
 	width:25px;
@@ -1923,6 +1923,6 @@ a.list-group-item.active:focus {
 }
 
 .list-price-free {
-	color: #02b980;
+	color: #00b77f;
 	text-align:right;
 }

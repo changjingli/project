@@ -2138,14 +2138,13 @@ select:-webkit-autofill {
 .nav.user-nav > li {
   float: left;
   height: 60px;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
 }
 .nav.user-nav > li > a {
   display: block;
   padding: 10px 25px;
-  color: #3c3c3c;
+  color: #fff;
   font-weight: bold;
-  background: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2165,10 +2164,11 @@ select:-webkit-autofill {
 }
 .nav.user-nav > li > a:hover,
 .nav.user-nav > li > a:focus {
-  color: #46c37b;
+  /*color: #fff;
+  background: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;*/
 }
 .nav.user-nav > li > a.hasmessage {
   position: relative;
@@ -2349,13 +2349,11 @@ select:-webkit-autofill {
   text-align: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer-logo .footer-sns i:hover {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer-logo .footer-sns i.es-icon-weibo {
