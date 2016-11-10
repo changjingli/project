@@ -2328,6 +2328,8 @@ select:-webkit-autofill {
   margin-top: 30px;
 }
 .footer-logo .text-logo {
+	margin: 0 auto;
+	display: block;
 	margin-bottom: 30px;
 	max-width: 100%;
 }

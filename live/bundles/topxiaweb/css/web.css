@@ -4411,8 +4411,8 @@ a.homework-essay-textarea-pack-up{
 
 .homepage .news li em {
 	width: 140px;
-	float: right;
-	text-align: right;
+	float: left;
+	text-align: left;
 	font-style: normal;
 	color: #02b980;
 }

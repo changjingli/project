@@ -1909,3 +1909,20 @@ a.list-group-item.active:focus {
 	border-radius: 4px;
 	min-width: 0px;
 } 
+
+.list-order {
+	color: #02b980;
+	float:left;
+	font-size:1.2em;
+	width:25px;
+}
+
+.list-price {
+	color:red;
+	text-align:right;
+}
+
+.list-price-free {
+	color: #02b980;
+	text-align:right;
+}
