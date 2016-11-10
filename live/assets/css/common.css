@@ -2,9 +2,30 @@
 	position: relative;
 }
 
-.xin:before {
+.xin:before, .xin:after {
 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.xin:after {
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
 	content: '新';
+}
+
+.xin:before {
+	content: '';
+	border-top: 30px solid #e9173e;
+	border-left: 30px solid #e9173e;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid transparent;
 }
 
 .placeholder {
